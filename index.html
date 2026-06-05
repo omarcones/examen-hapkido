@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#e94560">
+    <meta name="theme-color" content="#1a1a1a">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Examen de Hapkido</title>
@@ -25,22 +25,153 @@
             display: flex;
             flex-direction: column;
         }
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #e94560, #c0392b);
-            padding: 20px 16px;
+
+        /* ========== START SCREEN / MENU ========== */
+        .start-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 0;
+        }
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(233, 69, 96, 0.3);
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .hero-icon { font-size: 5em; margin-bottom: 16px; }
+        .hero-title { font-size: 1.8em; color: #fff; margin-bottom: 8px; font-weight: 700; }
+        .hero-subtitle { color: #aaa; font-size: 0.95em; margin-bottom: 28px; }
+        .hero-subtitle span { color: #e94560; font-weight: bold; }
+        .hero-btn {
+            padding: 18px 60px;
+            background: linear-gradient(135deg, #e94560, #c0392b);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(233, 69, 96, 0.4);
+            transition: all 0.2s ease;
+            min-width: 240px;
+        }
+        .hero-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(233, 69, 96, 0.5);
+        }
+        .hero-btn:active { transform: scale(0.97); }
+
+        /* Sections Menu Screen */
+        .sections-screen {
+            display: none;
+            flex-direction: column;
+            padding: 0 16px 24px;
+            min-height: 100vh;
+            animation: slideUp 0.4s ease;
+        }
+        .sections-screen.show { display: flex; }
+        .sections-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 16px 16px;
+            position: relative;
+        }
+        .sections-header-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #fff;
+        }
+        .back-btn-menu {
+            position: absolute;
+            left: 0;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-btn-menu:active { background: rgba(255,255,255,0.2); }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .menu-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 16px 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .menu-card:hover {
+            background: rgba(233, 69, 96, 0.1);
+            border-color: rgba(233, 69, 96, 0.3);
+            transform: translateY(-2px);
+        }
+        .menu-card:active { transform: scale(0.97); }
+        .menu-card-icon { font-size: 1.8em; }
+        .menu-card-title { font-size: 0.8em; font-weight: 600; color: #fff; line-height: 1.3; }
+        .menu-card-count { font-size: 0.7em; color: #888; }
+
+        .menu-card.full-exam {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.15), rgba(180, 30, 50, 0.15));
+            border: 2px solid rgba(233, 69, 96, 0.4);
+            padding: 20px 12px;
+            flex-direction: row;
+            justify-content: center;
+            gap: 16px;
+        }
+        .menu-card.full-exam:hover {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.25), rgba(180, 30, 50, 0.25));
+            border-color: #e94560;
+        }
+        .menu-card.full-exam .menu-card-icon { font-size: 2.2em; }
+        .menu-card.full-exam .menu-card-title { font-size: 1em; }
+        .menu-card.full-exam .menu-card-count { font-size: 0.8em; color: #e94560; }
+
+
+        /* ========== EXAM SCREEN ========== */
+        #examScreen { display: none; }
+        .header {
+            background: linear-gradient(135deg, #1a1a2e, #2a2a4e);
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
             position: sticky;
             top: 0;
             z-index: 100;
+            border-bottom: 2px solid #e94560;
         }
-        .header h1 { font-size: 1.4em; color: white; margin-bottom: 4px; }
-        .header p { color: rgba(255,255,255,0.85); font-size: 0.85em; }
+        .header h1 { font-size: 1.2em; color: #fff; margin-bottom: 4px; }
+        .header p { color: #aaa; font-size: 0.8em; }
 
         /* Progress Bar */
         .progress-container {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.05);
             height: 6px;
             width: 100%;
         }
@@ -75,6 +206,11 @@
         }
         .pill-correct { background: rgba(39, 174, 96, 0.2); color: #2ecc71; border: 1px solid #27ae60; }
         .pill-wrong { background: rgba(231, 76, 60, 0.2); color: #e74c3c; border: 1px solid #e74c3c; }
+        .pill-percentage {
+            background: rgba(243, 156, 18, 0.2);
+            color: #f39c12;
+            border: 1px solid #f39c12;
+        }
 
         /* Main Content */
         .main-content {
@@ -208,12 +344,33 @@
         .next-btn.show { display: block; }
         .next-btn:active { transform: scale(0.98); }
 
-        /* Results Screen */
+        /* Back Button */
+        .back-btn {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-btn:active { background: rgba(255,255,255,0.2); }
+
+        /* ========== RESULTS SCREEN ========== */
         .results-screen {
             display: none;
             text-align: center;
             padding: 24px 16px;
             animation: slideUp 0.5s ease;
+            min-height: 100vh;
         }
         .results-screen.show { display: block; }
         .results-icon { font-size: 4em; margin-bottom: 16px; }
@@ -255,50 +412,38 @@
         .wrong-item .q-text { color: #e74c3c; font-weight: bold; margin-bottom: 4px; }
         .wrong-item .q-answer { color: #2ecc71; }
 
-        /* Restart Button */
-        .restart-btn {
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .action-btn {
             padding: 16px 40px;
-            background: linear-gradient(135deg, #e94560, #c0392b);
-            color: white;
             border: none;
             border-radius: 30px;
             font-size: 1em;
             font-weight: bold;
             cursor: pointer;
-            margin-top: 20px;
+            transition: all 0.2s ease;
         }
-        .restart-btn:active { transform: scale(0.97); }
-
-        /* Start Screen */
-        .start-screen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 24px;
-            text-align: center;
-        }
-        .start-icon { font-size: 5em; margin-bottom: 20px; }
-        .start-title { font-size: 1.8em; color: white; margin-bottom: 8px; }
-        .start-subtitle { color: #aaa; margin-bottom: 32px; font-size: 0.95em; }
-        .start-btn {
-            padding: 18px 50px;
+        .action-btn:active { transform: scale(0.97); }
+        .btn-primary {
             background: linear-gradient(135deg, #e94560, #c0392b);
             color: white;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.1em;
-            font-weight: bold;
-            cursor: pointer;
             box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
         }
-        .start-btn:active { transform: scale(0.97); }
-        .start-info {
-            margin-top: 24px;
-            color: #888;
-            font-size: 0.85em;
-            line-height: 1.6;
+        .btn-secondary {
+            background: rgba(255,255,255,0.08);
+            color: #ddd;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.15);
         }
 
         @keyframes fadeIn {
@@ -308,26 +453,40 @@
 
         /* Hide scrollbar */
         ::-webkit-scrollbar { width: 0px; background: transparent; }
+
+        /* Responsive */
+        @media (min-width: 480px) {
+            .menu-grid { grid-template-columns: repeat(3, 1fr); }
+            .menu-card.full-exam { grid-column: 1 / -1; }
+        }
     </style>
+<base target="_blank">
 </head>
 <body>
     <div class="app">
-        <!-- START SCREEN -->
+        <!-- START SCREEN (Hero) -->
         <div class="start-screen" id="startScreen">
-            <div class="start-icon">🥋</div>
-            <div class="start-title">Examen de Hapkido</div>
-            <div class="start-subtitle">246 preguntas de selección simple</div>
-            <button class="start-btn" onclick="startExam()">Comenzar Examen</button>
-            <div class="start-info">
-                📱 Puedes instalar esta app en tu celular<br>
-                💾 Funciona sin internet después de la primera carga<br>
-                🔄 Las preguntas se mezclan cada vez
+            <div class="hero-section">
+                <div class="hero-icon">🥋</div>
+                <div class="hero-title">Examen de Hapkido</div>
+                <div class="hero-subtitle"><span id="totalQuestionsCount">246</span> preguntas de selección simple</div>
+                <button class="hero-btn" onclick="showSectionsMenu()">Comenzar</button>
             </div>
         </div>
 
+        <!-- SECTIONS MENU SCREEN -->
+        <div class="sections-screen" id="sectionsScreen">
+            <div class="sections-header">
+                <button class="back-btn-menu" onclick="backToStart()">←</button>
+                <div class="sections-header-title">📚 Selecciona una sección</div>
+            </div>
+            <div class="menu-grid" id="menuGrid"></div>
+        </div>
+
         <!-- EXAM SCREEN -->
-        <div id="examScreen" style="display:none;">
-            <div class="header">
+        <div id="examScreen">
+            <div class="header" style="position:relative;">
+                <button class="back-btn" onclick="confirmExit()" title="Volver al menú">←</button>
                 <h1>🥋 Examen de Hapkido</h1>
                 <p id="headerProgress">Pregunta 1 de 246</p>
             </div>
@@ -341,6 +500,7 @@
             <div class="score-bar">
                 <span class="score-pill pill-correct" id="correctPill">✓ 0</span>
                 <span class="score-pill pill-wrong" id="wrongPill">✗ 0</span>
+                <span class="score-pill pill-percentage" id="percentagePill">📊 0%</span>
             </div>
 
             <div class="main-content">
@@ -357,7 +517,7 @@
         <!-- RESULTS SCREEN -->
         <div class="results-screen" id="resultsScreen">
             <div class="results-icon" id="resultsIcon">🏆</div>
-            <div class="results-title">¡Examen Completado!</div>
+            <div class="results-title" id="resultsTitle">¡Examen Completado!</div>
             <div class="results-score" id="resultsScore">0/246</div>
             <div class="results-percentage" id="resultsPercentage">0%</div>
             <div class="results-message" id="resultsMessage"></div>
@@ -372,7 +532,10 @@
                 </div>
             </div>
             <div class="wrong-list" id="wrongList"></div>
-            <button class="restart-btn" onclick="restartExam()">🔄 Reiniciar Examen</button>
+            <div class="action-buttons">
+                <button class="action-btn btn-primary" onclick="restartSameSection()">🔄 Repetir Esta Sección</button>
+                <button class="action-btn btn-secondary" onclick="backToMenu()">📋 Menú Principal</button>
+            </div>
         </div>
     </div>
 
@@ -626,13 +789,50 @@
   {"q":"¿Cuáles son las fechas de Eulalio Vielma?","opts":["24 de agosto de 1960", "N: 12 de diciembre de 1937 | M: 14 de mayo de 2014", "N: 4 de noviembre de 1859 | M: 25 de abril de 1943", "N: 20 de julio de 1904 | M: 15 de junio de 1986"],"corr":1,"sec":"Maestros y Fechas","corr_txt":"N: 12 de diciembre de 1937 | M: 14 de mayo de 2014"}
 ];
 
+        // Build sections map
+        const SECTIONS = {};
+        QUESTIONS.forEach(q => {
+            if (!SECTIONS[q.sec]) SECTIONS[q.sec] = [];
+            SECTIONS[q.sec].push(q);
+        });
+
+        const SECTION_ICONS = {
+            "Defensas": "🛡️",
+            "Historia del Hapkido": "📜",
+            "Master Mendizábal": "👤",
+            "Técnicas de Pierna": "🦵",
+            "Entrevista a Choi Yong Sul": "🎤",
+            "Vocabulario Coreano": "🇰🇷",
+            "Inmovilizaciones": "🤼",
+            "Clasificación por Posición": "📍",
+            "Combate": "⚔️",
+            "Asociación Venezolana": "🇻🇪",
+            "Master Marco Tulio Vargas": "👤",
+            "Maestros y Fechas": "📅",
+            "Partes del Cuerpo": "🫀",
+            "Acciones": "⚡",
+            "Formas de Defensa": "🛡️",
+            "Ataques": "👊",
+            "Números Coreanos": "🔢",
+            "Definición y Principios": "📖",
+            "Filosofía": "🧘",
+            "Caídas": "🍂",
+            "Protecciones": "🪖",
+            "Ying Yang": "☯️",
+            "Federación Internacional": "🌍",
+            "Proyecciones": "🔄",
+            "Dobom": "👐",
+            "Historia de Choi Yong Sul": "🏯"
+        };
+
+        let currentSection = null;
         let questions = [];
         let currentIndex = 0;
         let correctCount = 0;
         let wrongCount = 0;
         let wrongAnswers = [];
         let answered = false;
-        const totalQuestions = QUESTIONS.length;
+        let totalQuestions = 0;
 
         // Register Service Worker
         if ('serviceWorker' in navigator) {
@@ -652,27 +852,86 @@
             return shuffled;
         }
 
-        function startExam() {
+        // ========== MENU ==========
+        function buildMenu() {
+            const grid = document.getElementById('menuGrid');
+            grid.innerHTML = '';
+
+            // Add individual section cards
+            const sectionNames = Object.keys(SECTIONS).sort();
+            sectionNames.forEach(sec => {
+                const count = SECTIONS[sec].length;
+                const icon = SECTION_ICONS[sec] || '📋';
+                const card = document.createElement('div');
+                card.className = 'menu-card';
+                card.innerHTML = `
+                    <div class="menu-card-icon">${icon}</div>
+                    <div class="menu-card-title">${sec}</div>
+                    <div class="menu-card-count">${count} preguntas</div>
+                `;
+                card.onclick = function() { startSectionExam(sec); };
+                grid.appendChild(card);
+            });
+
+            // Add "Full Exam" card at the end
+            const fullCard = document.createElement('div');
+            fullCard.className = 'menu-card full-exam';
+            fullCard.innerHTML = `
+                <div class="menu-card-icon">🏆</div>
+                <div>
+                    <div class="menu-card-title">Examen Completo</div>
+                    <div class="menu-card-count">${QUESTIONS.length} preguntas · Todas las secciones</div>
+                </div>
+            `;
+            fullCard.onclick = function() { startFullExam(); };
+            grid.appendChild(fullCard);
+        }
+
+        function showSectionsMenu() {
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('sectionsScreen').classList.add('show');
+        }
+
+        function backToStart() {
+            document.getElementById('sectionsScreen').classList.remove('show');
+            document.getElementById('startScreen').style.display = 'flex';
+        }
+
+        function startSectionExam(sectionName) {
+            currentSection = sectionName;
+            questions = shuffleArray([...SECTIONS[sectionName]]);
+            startExamCommon();
+        }
+
+        function startFullExam() {
+            currentSection = null;
             questions = shuffleArray([...QUESTIONS]);
+            startExamCommon();
+        }
+
+        function startExamCommon() {
             currentIndex = 0;
             correctCount = 0;
             wrongCount = 0;
             wrongAnswers = [];
             answered = false;
+            totalQuestions = questions.length;
 
             document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('sectionsScreen').classList.remove('show');
             document.getElementById('examScreen').style.display = 'block';
             document.getElementById('resultsScreen').classList.remove('show');
 
             showQuestion();
         }
 
+        // ========== EXAM ==========
         function showQuestion() {
             answered = false;
             const q = questions[currentIndex];
 
             // Update progress
-            const progress = Math.round((currentIndex / totalQuestions) * 100);
+            const progress = Math.round(((currentIndex) / totalQuestions) * 100);
             document.getElementById('progressBar').style.width = progress + '%';
             document.getElementById('progressText').textContent = 'Progreso: ' + progress + '%';
             document.getElementById('headerProgress').textContent = 'Pregunta ' + (currentIndex + 1) + ' de ' + totalQuestions;
@@ -701,10 +960,20 @@
             document.getElementById('feedback').innerHTML = '';
             document.getElementById('nextBtn').classList.remove('show');
 
+            // Update score pills
+            updateScorePills();
+
             // Animation
             const card = document.getElementById('questionCard');
             card.style.animation = 'none';
             setTimeout(function() { card.style.animation = 'slideUp 0.4s ease'; }, 10);
+        }
+
+        function updateScorePills() {
+            document.getElementById('correctPill').textContent = '✓ ' + correctCount;
+            document.getElementById('wrongPill').textContent = '✗ ' + wrongCount;
+            const pct = totalQuestions > 0 ? Math.round((correctCount / (correctCount + wrongCount || 1)) * 100) : 0;
+            document.getElementById('percentagePill').textContent = '📊 ' + pct + '%';
         }
 
         function selectOption(element) {
@@ -740,13 +1009,13 @@
                     num: currentIndex + 1,
                     question: q.q,
                     correct: q.corr_txt,
-                    selected: q.opts[selectedIdx]
+                    selected: q.opts[selectedIdx],
+                    section: q.sec
                 });
             }
 
-            // Update score pills
-            document.getElementById('correctPill').textContent = '✓ ' + correctCount;
-            document.getElementById('wrongPill').textContent = '✗ ' + wrongCount;
+            // Update score pills in real time
+            updateScorePills();
 
             // Show next button
             const nextBtn = document.getElementById('nextBtn');
@@ -767,6 +1036,13 @@
             }
         }
 
+        function confirmExit() {
+            if (confirm('¿Seguro que quieres salir del examen? Perderás tu progreso actual.')) {
+                backToMenu();
+            }
+        }
+
+        // ========== RESULTS ==========
         function showResults() {
             document.getElementById('examScreen').style.display = 'none';
             document.getElementById('resultsScreen').classList.add('show');
@@ -778,12 +1054,20 @@
             document.getElementById('detailCorrect').textContent = correctCount;
             document.getElementById('detailWrong').textContent = wrongCount;
 
+            // Title based on section or full exam
+            const titleEl = document.getElementById('resultsTitle');
+            if (currentSection) {
+                titleEl.textContent = '¡' + currentSection + ' - Completado!';
+            } else {
+                titleEl.textContent = '¡Examen Completo - Completado!';
+            }
+
             // Icon and message
             let icon = '🏆';
             let message = '';
             if (percentage >= 90) {
                 icon = '🏆';
-                message = '¡Excelente! Dominas el cuestionario completamente. ¡Cinturón negro de conocimiento!';
+                message = '¡Excelente! Dominas el material completamente. ¡Cinturón negro de conocimiento!';
             } else if (percentage >= 75) {
                 icon = '🥇';
                 message = '¡Muy bien! Tienes un gran dominio del material. ¡Sigue así!';
@@ -807,6 +1091,7 @@
                 let html = '<h3 style="color:#e94560;margin-bottom:12px;font-size:1em;">📋 Preguntas incorrectas para repasar (' + wrongAnswers.length + '):</h3>';
                 wrongAnswers.forEach(function(item) {
                     html += '<div class="wrong-item">' +
+                        '<div style="color:#888;font-size:0.75em;margin-bottom:2px;">[' + item.section + ']</div>' +
                         '<div class="q-text">#' + item.num + '. ' + item.question + '</div>' +
                         '<div style="color:#e74c3c;text-decoration:line-through;margin:4px 0;">❌ ' + item.selected + '</div>' +
                         '<div class="q-answer">✅ ' + item.correct + '</div>' +
@@ -818,10 +1103,25 @@
             }
         }
 
-        function restartExam() {
+        function restartSameSection() {
             document.getElementById('resultsScreen').classList.remove('show');
-            document.getElementById('startScreen').style.display = 'flex';
+            if (currentSection) {
+                startSectionExam(currentSection);
+            } else {
+                startFullExam();
+            }
         }
+
+        function backToMenu() {
+            document.getElementById('resultsScreen').classList.remove('show');
+            document.getElementById('examScreen').style.display = 'none';
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('sectionsScreen').classList.add('show');
+            currentSection = null;
+        }
+
+        // Initialize menu on load
+        buildMenu();
     </script>
 </body>
 </html>
