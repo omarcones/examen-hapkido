@@ -541,252 +541,2958 @@
 
     <script>
         const QUESTIONS = [
-  {"q":"¿Qué es BAKAT PALMOK MONTONG YOP MAKI?","opts":["Defensa lateral con el borde externo del antebrazo", "Defensa al medio con manos cruzadas", "Defensa lateral", "Defensa con el canto de la mano retorcida"],"corr":0,"sec":"Defensas","corr_txt":"Defensa lateral con el borde externo del antebrazo"},
-  {"q":"¿Qué arte se desarrolló en secreto durante 500 años y quiénes lo practicaban?","opts":["Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea.", "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.", "El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas.", "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones."],"corr":2,"sec":"Historia del Hapkido","corr_txt":"El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas."},
-  {"q":"¿Quién era el maestro de Carlos Flores Medina?","opts":["El maestro Kang, fundador del Taekwondo en Venezuela (1973).", "Porque las artes marciales en el país eran bastante cerradas.", "A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal.", "En 1984."],"corr":0,"sec":"Master Mendizábal","corr_txt":"El maestro Kang, fundador del Taekwondo en Venezuela (1973)."},
-  {"q":"¿Qué es BANDAL CHAGUI?","opts":["Patada hacia atrás", "Patada semicircular baja exterior", "Patada semicircular baja", "Círculo de pierna interior"],"corr":2,"sec":"Técnicas de Pierna","corr_txt":"Patada semicircular baja"},
-  {"q":"¿Por qué Takeda decidió adoptar a Choi?","opts":["Kintaro Wadanabi.", "Kintaro Wadanabi era amigo íntimo de Takeda Sokaku y lo presentó ante él. Choi señaló una escena de artes marciales en un mural del templo diciendo que eso quería ser.", "Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo.", "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista."],"corr":2,"sec":"Entrevista a Choi Yong Sul","corr_txt":"Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo."},
-  {"q":"¿Qué significa AN YONG JA SE YO?","opts":["Bandera", "Gimnasio", "Hola", "Saludo al maestro"],"corr":2,"sec":"Vocabulario Coreano","corr_txt":"Hola"},
-  {"q":"¿Qué es NACKO CHAGUI?","opts":["Patada semicircular baja exterior", "Patada enganchando", "Patada circular", "Patada hacia atrás"],"corr":1,"sec":"Técnicas de Pierna","corr_txt":"Patada enganchando"},
-  {"q":"Nombra 6 tipos de inmovilizaciones vistas en el material:","opts":["Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas", "Luxaciones", "Inmovilizaciones en el suelo", "Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano"],"corr":0,"sec":"Inmovilizaciones","corr_txt":"Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas"},
-  {"q":"¿Qué significa YOA U YANG U?","opts":["Atrás", "Giro del cuerpo", "Colocar frente a frente", "Hacia fuera"],"corr":2,"sec":"Clasificación por Posición","corr_txt":"Colocar frente a frente"},
-  {"q":"¿Qué significa SIMPAN JYONG?","opts":["Zona de competición", "Reglas de competición", "Juez", "Árbitro"],"corr":1,"sec":"Combate","corr_txt":"Reglas de competición"},
-  {"q":"¿Cuándo se conectó la AVH a la Federación Mundial de Hapkido?","opts":["Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez.", "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.", "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país.", "En 1993."],"corr":3,"sec":"Asociación Venezolana","corr_txt":"En 1993."},
-  {"q":"¿Qué significa KYESI?","opts":["Espinillera", "Tiempo médico (1 minuto)", "Reglas de competición", "Descalificación"],"corr":1,"sec":"Combate","corr_txt":"Tiempo médico (1 minuto)"},
-  {"q":"¿Cómo se dice 9 en coreano?","opts":["SET (Tercero)", "NET (Cuarto)", "DUL (Segundo)", "AJOP (Noveno)"],"corr":3,"sec":"Números Coreanos","corr_txt":"AJOP (Noveno)"},
-  {"q":"¿Qué es BITURO CHAGUI?","opts":["Patada enganchando", "Patada lateral", "Círculo de pierna exterior", "Patada semicircular baja exterior"],"corr":3,"sec":"Técnicas de Pierna","corr_txt":"Patada semicircular baja exterior"},
-  {"q":"¿Qué significa OKGORO?","opts":["Retorcerse", "Esquivar", "Manos en cruz", "Ataque"],"corr":2,"sec":"Acciones","corr_txt":"Manos en cruz"},
-  {"q":"¿Qué significa SOGUI?","opts":["Salto", "Posición", "Mano hacia arriba / Mano hacia abajo", "Golpear"],"corr":1,"sec":"Acciones","corr_txt":"Posición"},
-  {"q":"¿En qué año inició sus entrenamientos de Taekwondo tradicional?","opts":["Porque las artes marciales en el país eran bastante cerradas.", "En 1984.", "Cada quien tomó su propio camino, y el Master Mendizábal y otros decidieron formar la AVH.", "Con el maestro Carlos Flores Medina."],"corr":1,"sec":"Master Mendizábal","corr_txt":"En 1984."},
-  {"q":"¿Qué significa TUIO?","opts":["Adelante, avanzar", "Atrás, retroceder", "Manos se cruzan al salir", "Salto"],"corr":3,"sec":"Acciones","corr_txt":"Salto"},
-  {"q":"¿Cuáles son las fechas de nacimiento y muerte de Choi Yong Sul?","opts":["24 de agosto de 1960", "N: 4 de noviembre de 1859 | M: 25 de abril de 1943", "10 de enero de 1975", "N: 20 de julio de 1904 | M: 15 de junio de 1986"],"corr":3,"sec":"Maestros y Fechas","corr_txt":"N: 20 de julio de 1904 | M: 15 de junio de 1986"},
-  {"q":"¿Dónde estaba el templo budista donde vivió Choi antes de conocer a Takeda?","opts":["Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida.", "En Kyoto.", "3808 técnicas.", "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"En Kyoto."},
-  {"q":"¿Qué significa DUNG CHUMOK?","opts":["Palma de la mano", "Pegar", "Parte superior de los nudillos", "Cuello"],"corr":2,"sec":"Partes del Cuerpo","corr_txt":"Parte superior de los nudillos"},
-  {"q":"¿Qué es SONNAL DUNG MONTONG MAKI?","opts":["Defensa al medio con el antebrazo", "Defensa con el canto de la mano", "Defensa al medio con ambos antebrazos", "Defensa al medio con el dorso de la mano"],"corr":3,"sec":"Defensas","corr_txt":"Defensa al medio con el dorso de la mano"},
-  {"q":"¿A qué edad viajó Choi a Hawaii con Takeda?","opts":["Ji Han Jae y Myung Kwang Sik.", "1953.", "El 25 de abril de 1943.", "Casi 28 años."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"Casi 28 años."},
-  {"q":"¿Qué significa SI CHAK?","opts":["Espinillera", "Comenzar", "Combate", "Descalificación"],"corr":1,"sec":"Combate","corr_txt":"Comenzar"},
-  {"q":"¿Qué significa NULO?","opts":["Arriba", "Hacia abajo", "Codo", "Pegar"],"corr":1,"sec":"Partes del Cuerpo","corr_txt":"Hacia abajo"},
-  {"q":"¿En qué año empezó Choi a enseñar su arte en Corea?","opts":["En la Montaña de Su, en el área de Hokkaido.", "En 1948, a los 44 años.", "3808 técnicas.", "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"En 1948, a los 44 años."},
-  {"q":"¿Qué significa DUIT?","opts":["Al frente", "Al lado", "Colocar frente a frente", "Atrás"],"corr":3,"sec":"Clasificación por Posición","corr_txt":"Atrás"},
-  {"q":"¿Qué hizo Ji Han Jae?","opts":["Ji Han Jae y Myung Kwang Sik.", "El 20 de julio de 1904 en la provincia de Chung Buk (Chong Buk), Corea del Sur.", "Se separó para reorganizar el Ku Sul Won, un arte parecido al Hapkido con más énfasis en armas y Hyong (formas).", "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro."},
-  {"q":"¿Dónde es instructor?","opts":["De la 'IUNEP' (Ministerio de Interior y Justicia).", "En numerosas oportunidades en formas.", "Instructor de la escuela de custodias del Ministerio de Interior y Justicia.", "Hapkido y Taekwondo."],"corr":0,"sec":"Master Marco Tulio Vargas","corr_txt":"De la 'IUNEP' (Ministerio de Interior y Justicia)."},
-  {"q":"¿Qué significa TI?","opts":["Gimnasio", "Cinturón", "Traje de taekwondo", "Movimientos con números"],"corr":1,"sec":"Vocabulario Coreano","corr_txt":"Cinturón"},
-  {"q":"¿Qué es DOLLYO CHAGUI?","opts":["Patada circular", "Círculo de pierna interior", "Patada enganchando", "Patada enganchando con pierna recta"],"corr":0,"sec":"Técnicas de Pierna","corr_txt":"Patada circular"},
-  {"q":"¿Cuándo y dónde se estableció Choi al volver a Corea?","opts":["3808 técnicas.", "Poco después de la muerte de Takeda, en Taegu, provincia de Kyung Buk.", "Casi 28 años.", "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"Poco después de la muerte de Takeda, en Taegu, provincia de Kyung Buk."},
-  {"q":"¿Qué significa AN?","opts":["Hacia adentro", "Atrás", "Hacia fuera", "Derecha"],"corr":0,"sec":"Clasificación por Posición","corr_txt":"Hacia adentro"},
-  {"q":"¿Quién raptó a Choi Yong Sul cuando era niño?","opts":["Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos.", "Kintaro Wadanabi.", "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.", "Kintaro Wadanabi era amigo íntimo de Takeda Sokaku y lo presentó ante él. Choi señaló una escena de artes marciales en un mural del templo diciendo que eso quería ser."],"corr":0,"sec":"Entrevista a Choi Yong Sul","corr_txt":"Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos."},
-  {"q":"¿Qué significa MAKI?","opts":["Ataque", "Defensa", "Atrás, retroceder", "Media vuelta"],"corr":1,"sec":"Acciones","corr_txt":"Defensa"},
-  {"q":"¿Qué significa SA BOM NIM QUE KIONNE?","opts":["Lo siento", "Decano de Maestros", "Bandera", "Saludo al maestro"],"corr":3,"sec":"Vocabulario Coreano","corr_txt":"Saludo al maestro"},
-  {"q":"¿Qué significa DOJANG?","opts":["Cinturón", "Bandera", "Gimnasio", "Sala de entrenamiento"],"corr":3,"sec":"Vocabulario Coreano","corr_txt":"Sala de entrenamiento"},
-  {"q":"¿Qué es YOP MAKI?","opts":["Defensa al medio con el dorso de la mano", "Defensa con el canto de la mano retorcida", "Defensa al medio con el antebrazo", "Defensa lateral"],"corr":3,"sec":"Defensas","corr_txt":"Defensa lateral"},
-  {"q":"¿Qué significa ARE?","opts":["Circular", "Hacia abajo", "Arriba", "Abajo"],"corr":3,"sec":"Partes del Cuerpo","corr_txt":"Abajo"},
-  {"q":"¿Qué significa PALMOK?","opts":["Antebrazo", "Circular", "Codo", "Hacia abajo"],"corr":0,"sec":"Partes del Cuerpo","corr_txt":"Antebrazo"},
-  {"q":"¿Qué significa BAKKAT?","opts":["Derecha", "Izquierda", "Al lado", "Hacia fuera"],"corr":3,"sec":"Clasificación por Posición","corr_txt":"Hacia fuera"},
-  {"q":"¿Qué es PAL POHODE?","opts":["El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.", "Antebrazos", "Golpe con el arco interior de la mano", "Retorcerse"],"corr":1,"sec":"Protecciones","corr_txt":"Antebrazos"},
-  {"q":"¿Qué es NERYO CHAGUI?","opts":["Círculo de pierna interior", "Patada enganchando", "Patada al frente", "Patada descendente"],"corr":3,"sec":"Técnicas de Pierna","corr_txt":"Patada descendente"},
-  {"q":"¿Cuál es su cargo actual?","opts":["Hapkido y Taekwondo.", "Instructor de la escuela de custodias del Ministerio de Interior y Justicia.", "De la 'IUNEP' (Ministerio de Interior y Justicia).", "Por su labor al frente de la ONG en deporte penitenciario en Venezuela."],"corr":1,"sec":"Master Marco Tulio Vargas","corr_txt":"Instructor de la escuela de custodias del Ministerio de Interior y Justicia."},
-  {"q":"¿Qué significa AKUMSON?","opts":["Palma de la mano", "Arco interior de la mano", "Lateral", "Canto exterior de la mano"],"corr":1,"sec":"Partes del Cuerpo","corr_txt":"Arco interior de la mano"},
-  {"q":"¿Qué fundaron Choi Yong Sul y Ji Han Jae en 1963?","opts":["El Daito Ryu Aiki-Jutsu. También era famoso maestro de espada y Jiu-Jitsu.", "En la Montaña de Su, en el área de Hokkaido.", "Quedó huérfano y fue llevado a Japón.", "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"La 'Korea Kido Association', donde Choi Yong Sul era el presidente."},
-  {"q":"¿Qué significa GODURO?","opts":["Una mano ayuda a la otra", "Manos en cruz", "Rompimiento", "Defensa"],"corr":0,"sec":"Acciones","corr_txt":"Una mano ayuda a la otra"},
-  {"q":"¿Qué significa JOGU?","opts":["Competidor", "Punto válido", "Peto", "Separarse"],"corr":2,"sec":"Combate","corr_txt":"Peto"},
-  {"q":"¿Qué significa KIONG KI CHANG?","opts":["Competidor", "Vencedor Azul / Vencedor Rojo", "Zona de competición", "Peto"],"corr":2,"sec":"Combate","corr_txt":"Zona de competición"},
-  {"q":"¿En qué ha sido campeón?","opts":["Por su labor al frente de la ONG en deporte penitenciario en Venezuela.", "Hapkido y Taekwondo.", "De la 'IUNEP' (Ministerio de Interior y Justicia).", "En numerosas oportunidades en formas."],"corr":3,"sec":"Master Marco Tulio Vargas","corr_txt":"En numerosas oportunidades en formas."},
-  {"q":"¿Qué es ARE MAKKI?","opts":["Defensa", "Defensa al centro con la zona interna del antebrazo", "Defensa abajo", "Defensa con el borde externo de la muñeca"],"corr":2,"sec":"Formas de Defensa","corr_txt":"Defensa abajo"},
-  {"q":"¿Qué significa BAKAT?","opts":["Pegar", "Hacia fuera", "Punta de los dedos", "Hacia abajo"],"corr":1,"sec":"Partes del Cuerpo","corr_txt":"Hacia fuera"},
-  {"q":"¿Cuánto tiempo vivió y entrenó Choi con Takeda Sokaku?","opts":["En 1959.", "El Daito Ryu Aiki-Jutsu. También era famoso maestro de espada y Jiu-Jitsu.", "Más de 30 años. Durante 20 años de su entrenamiento se apartó en su casa.", "3808 técnicas."],"corr":2,"sec":"Historia de Choi Yong Sul","corr_txt":"Más de 30 años. Durante 20 años de su entrenamiento se apartó en su casa."},
-  {"q":"¿Qué significa SON SU?","opts":["Amonestación", "Coquilla", "Punto válido", "Competidor"],"corr":3,"sec":"Combate","corr_txt":"Competidor"},
-  {"q":"¿Qué es AKUM SON TOK JIRUGUI?","opts":["Golpe con el arco interior de la mano", "Pegar con el codo lateral", "Pegar con la parte superior de los nudillos hacia fuera", "Pegar con el canto de la mano al cuello"],"corr":0,"sec":"Ataques","corr_txt":"Golpe con el arco interior de la mano"},
-  {"q":"¿A qué edad comenzó sus prácticas marciales y qué practicó?","opts":["El maestro Kang, fundador del Taekwondo en Venezuela (1973).", "Con el maestro Carlos Flores Medina.", "A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal.", "En 1984."],"corr":2,"sec":"Master Mendizábal","corr_txt":"A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal."},
-  {"q":"¿Cuándo nació Marco Tulio Vargas?","opts":["18 de julio de 1966", "24 de agosto de 1960", "N: 20 de julio de 1904 | M: 15 de junio de 1986", "10 de enero de 1975"],"corr":0,"sec":"Maestros y Fechas","corr_txt":"18 de julio de 1966"},
-  {"q":"¿Qué es MAE UKEMI?","opts":["Caída hacia atrás", "Caída lateral", "Caída con rollo hacia adelante", "Caída hacia adelante"],"corr":3,"sec":"Caídas","corr_txt":"Caída hacia adelante"},
-  {"q":"¿Qué significa NANSIM POHODE?","opts":["Gracias (en combate)", "Comenzar", "Coquilla", "Descalificación"],"corr":2,"sec":"Combate","corr_txt":"Coquilla"},
-  {"q":"¿Qué significa MONTONG?","opts":["Punta de los dedos", "Abajo", "Medio", "Pegar"],"corr":2,"sec":"Partes del Cuerpo","corr_txt":"Medio"},
-  {"q":"¿Cuáles fueron los dos discípulos más importantes que aparecieron en el dojo de Taegu?","opts":["Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'.", "Trabajó con Takeda capturando desertores militares en las montañas. Takeda intervino para que Choi no fuera reclutado, porque si moriría se perdería el Daito Ryu Aiki-Jutsu completamente.", "Ji Han Jae y In Hyuk Suh.", "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."],"corr":2,"sec":"Historia de Choi Yong Sul","corr_txt":"Ji Han Jae y In Hyuk Suh."},
-  {"q":"¿Por qué se cambió el nombre de Daito Ryu Aiki-Jutsu a Yoo Sool?","opts":["Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'.", "Quedó huérfano y fue llevado a Japón.", "Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio.", "Se separó para reorganizar el Ku Sul Won, un arte parecido al Hapkido con más énfasis en armas y Hyong (formas)."],"corr":0,"sec":"Historia de Choi Yong Sul","corr_txt":"Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'."},
-  {"q":"¿Qué es AN PALMOK MAKKI?","opts":["Defensa al centro con la zona interna del antebrazo", "Defensa con el borde interno de la muñeca", "Defensa con el borde externo de la muñeca", "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado"],"corr":1,"sec":"Formas de Defensa","corr_txt":"Defensa con el borde interno de la muñeca"},
-  {"q":"¿Qué es HOE JUM?","opts":["Peto", "24 de agosto de 1960", "Asalto", "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo."],"corr":2,"sec":"Protecciones","corr_txt":"Asalto"},
-  {"q":"¿Qué significa KUK KI?","opts":["Gracias", "Bandera", "Monitor", "Enhorabuena"],"corr":1,"sec":"Vocabulario Coreano","corr_txt":"Bandera"},
-  {"q":"¿Cuál es el principio central y más importante del Hapkido?","opts":["Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía.", "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.", "No está especificado en el material", "Ninguna de las anteriores"],"corr":1,"sec":"Filosofía","corr_txt":"El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física."},
-  {"q":"¿Qué significa GURIONG E MATCHOSO?","opts":["Movimientos sin números", "No / Sí", "Movimientos con números", "Saludo a la bandera"],"corr":2,"sec":"Vocabulario Coreano","corr_txt":"Movimientos con números"},
-  {"q":"¿Qué es JANSONNAL BITURO MAKI?","opts":["Defensa al medio con el antebrazo", "Defensa lateral", "Defensa con el canto de la mano", "Defensa con el canto de la mano retorcida"],"corr":3,"sec":"Defensas","corr_txt":"Defensa con el canto de la mano retorcida"},
-  {"q":"¿Qué significa CHE-YU-KWAN?","opts":["Gimnasio", "Maestro", "Sala de entrenamiento", "Lo siento"],"corr":0,"sec":"Vocabulario Coreano","corr_txt":"Gimnasio"},
-  {"q":"¿Cuándo y dónde nació Choi Yong Sul?","opts":["En 1959.", "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro.", "En 1954, por sugerencia de Seo Bok Seob.", "El 20 de julio de 1904 en la provincia de Chung Buk (Chong Buk), Corea del Sur."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"El 20 de julio de 1904 en la provincia de Chung Buk (Chong Buk), Corea del Sur."},
-  {"q":"¿Cómo comienza el estudiante a desarrollar su Ki?","opts":["El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.", "No está especificado en el material", "Todas las anteriores", "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía."],"corr":3,"sec":"Filosofía","corr_txt":"Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía."},
-  {"q":"¿Cuándo murió Choi Yong Sul y a qué edad?","opts":["El 15 de junio de 1986, a los 82 años.", "Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'.", "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados.", "En 1948, a los 44 años."],"corr":0,"sec":"Historia de Choi Yong Sul","corr_txt":"El 15 de junio de 1986, a los 82 años."},
-  {"q":"¿Cuándo nació Master Mendizábal?","opts":["10 de enero de 1975", "N: 12 de diciembre de 1937 | M: 14 de mayo de 2014", "N: 20 de julio de 1904 | M: 15 de junio de 1986", "24 de agosto de 1960"],"corr":3,"sec":"Maestros y Fechas","corr_txt":"24 de agosto de 1960"},
-  {"q":"¿Qué es EOLGUL MAKKI?","opts":["Defensa hacia arriba", "Defensa", "Defensa media o al medio", "Ataque con golpe de puño"],"corr":0,"sec":"Formas de Defensa","corr_txt":"Defensa hacia arriba"},
-  {"q":"¿Qué significa CHON CHIN?","opts":["Llegar más lejos", "Adelante, avanzar", "Girar 90° (frente a frente)", "Giro"],"corr":1,"sec":"Acciones","corr_txt":"Adelante, avanzar"},
-  {"q":"¿Qué significa KALYO?","opts":["Separarse", "Peto", "Árbitro", "Protector bucal"],"corr":0,"sec":"Combate","corr_txt":"Separarse"},
-  {"q":"¿Cómo se dice 5 en coreano?","opts":["DASOT (Quinto)", "DUL (Segundo)", "YODUL (Octavo)", "YOL (Décimo)"],"corr":0,"sec":"Números Coreanos","corr_txt":"DASOT (Quinto)"},
-  {"q":"¿Qué es JANSONNAL MAKI?","opts":["Defensa baja con ambos brazos", "Defensa con el canto de la mano", "Defensa al medio con el antebrazo", "Defensa al medio con manos cruzadas"],"corr":1,"sec":"Defensas","corr_txt":"Defensa con el canto de la mano"},
-  {"q":"¿Qué significa MOK?","opts":["Antebrazo", "Hacia fuera", "Cuello", "Codo"],"corr":2,"sec":"Partes del Cuerpo","corr_txt":"Cuello"},
-  {"q":"¿Por qué es conocido en el Ministerio?","opts":["De la 'IUNEP' (Ministerio de Interior y Justicia).", "Hapkido y Taekwondo.", "Por su labor al frente de la ONG en deporte penitenciario en Venezuela.", "En numerosas oportunidades en formas."],"corr":2,"sec":"Master Marco Tulio Vargas","corr_txt":"Por su labor al frente de la ONG en deporte penitenciario en Venezuela."},
-  {"q":"¿Qué significa CHIGUI?","opts":["Parte superior de los nudillos", "Lateral", "Antebrazo", "Pegar"],"corr":3,"sec":"Partes del Cuerpo","corr_txt":"Pegar"},
-  {"q":"¿Cuándo y cómo nació la Asociación Venezolana de Hapkido 'Choi Yong Sul'?","opts":["El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.", "En 1993.", "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país.", "Master José Luis Mendizábal, Master Eulalio Vielma, Master Wilfredo Guette, Master Marco Tulio Vargas, Master Eliverio Vargas, Sabonim Fanny Rodríguez."],"corr":2,"sec":"Asociación Venezolana","corr_txt":"En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país."},
-  {"q":"¿Qué es SONNAL BAKAT CHIGUI?","opts":["Pegar con el canto exterior de la mano", "Golpe al medio", "Pegar con el codo lateral", "Golpe lateral"],"corr":0,"sec":"Ataques","corr_txt":"Pegar con el canto exterior de la mano"},
-  {"q":"¿Cuál es la importancia del Hapkido para el practicante?","opts":["Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.", "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía", "No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías.", "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física."],"corr":3,"sec":"Definición y Principios","corr_txt":"Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física."},
-  {"q":"¿Cuándo nació José Cartaya?","opts":["10 de enero de 1975", "18 de julio de 1966", "N: 4 de noviembre de 1859 | M: 25 de abril de 1943", "24 de agosto de 1960"],"corr":0,"sec":"Maestros y Fechas","corr_txt":"10 de enero de 1975"},
-  {"q":"¿En qué año se decidió cambiar el nombre al actual 'Hapkido'?","opts":["Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.", "En 1959.", "En 1948, a los 44 años.", "El 25 de abril de 1943."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"En 1959."},
-  {"q":"¿Qué significa PALKUP?","opts":["Cuello", "Abajo", "Arriba", "Codo"],"corr":3,"sec":"Partes del Cuerpo","corr_txt":"Codo"},
-  {"q":"¿Qué pasó hace trece siglos en Corea?","opts":["El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas.", "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones.", "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.", "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea."],"corr":1,"sec":"Historia del Hapkido","corr_txt":"Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones."},
-  {"q":"¿Qué es TUIT CHAGUI?","opts":["Patada enganchando", "Patada lateral", "Círculo de pierna exterior", "Patada hacia atrás"],"corr":3,"sec":"Técnicas de Pierna","corr_txt":"Patada hacia atrás"},
-  {"q":"¿Qué es el Hapkido?","opts":["Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía", "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física.", "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.", "Es un arte marcial coreano enfocado hacia la defensa personal militar y civil. Es un arte muy integrado que consiste en técnicas extensas de bloqueo articular, técnicas de patadas dinámicas, patadas simples, golpes similares al Taekwondo tradicional, y técnicas de bloqueo duras y blandas. Es una compilación de dos artes marciales coreanos diferentes: El Yoo Sool (que proviene del Daito Ryu Aiki Jutsu creado por Takeda Sogaku, maestro de Choi Yong Sul) y el famoso arte de las patadas coreanas Taek-Kyon."],"corr":3,"sec":"Definición y Principios","corr_txt":"Es un arte marcial coreano enfocado hacia la defensa personal militar y civil. Es un arte muy integrado que consiste en técnicas extensas de bloqueo articular, técnicas de patadas dinámicas, patadas simples, golpes similares al Taekwondo tradicional, y técnicas de bloqueo duras y blandas. Es una compilación de dos artes marciales coreanos diferentes: El Yoo Sool (que proviene del Daito Ryu Aiki Jutsu creado por Takeda Sogaku, maestro de Choi Yong Sul) y el famoso arte de las patadas coreanas Taek-Kyon."},
-  {"q":"¿Cómo se explica en términos sencillos?","opts":["Gimnasio", "En todo lo bueno hay algo de malo y en todo lo malo hay algo bueno.", "El maestro Kang, fundador del Taekwondo en Venezuela (1973).", "El 15 de junio de 1986, a los 82 años."],"corr":1,"sec":"Ying Yang","corr_txt":"En todo lo bueno hay algo de malo y en todo lo malo hay algo bueno."},
-  {"q":"¿Qué significa NO / NE?","opts":["Sala de entrenamiento", "Decano de Maestros", "Hola", "No / Sí"],"corr":3,"sec":"Vocabulario Coreano","corr_txt":"No / Sí"},
-  {"q":"¿Qué significa WOO-SE-KIROK?","opts":["Peto", "Amonestación", "Rellenar tarjeta de superioridad", "Juez"],"corr":2,"sec":"Combate","corr_txt":"Rellenar tarjeta de superioridad"},
-  {"q":"¿Qué representa el Ying Yang?","opts":["18 de julio de 1966", "El equilibrio de fuerzas.", "Caída con rollo hacia adelante", "Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio."],"corr":1,"sec":"Ying Yang","corr_txt":"El equilibrio de fuerzas."},
-  {"q":"¿Dónde fue enterrado Choi Yong Sul?","opts":["Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años.", "En la Montaña de Su, en el área de Hokkaido.", "En 1948, a los 44 años.", "En Taegu."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"En Taegu."},
-  {"q":"¿Estuvo Choi personalmente involucrado enseñando a la familia real japonesa?","opts":["Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio.", "Casi 28 años.", "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas.", "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados."],"corr":0,"sec":"Historia de Choi Yong Sul","corr_txt":"Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio."},
-  {"q":"¿Qué significa SONNAL DUNG?","opts":["Arriba", "Canto interior de la mano (dorso)", "Canto exterior de la mano", "Golpear"],"corr":1,"sec":"Partes del Cuerpo","corr_txt":"Canto interior de la mano (dorso)"},
-  {"q":"¿Qué significa OLGUL?","opts":["Puño", "Parte superior de los nudillos", "Arriba", "Hacia fuera"],"corr":2,"sec":"Partes del Cuerpo","corr_txt":"Arriba"},
-  {"q":"¿Quién adoptó a Choi Yong Sul en Japón y qué nombre le dio?","opts":["En Taegu.", "La 'Korea Kido Association', donde Choi Yong Sul era el presidente.", "Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas.", "Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida."},
-  {"q":"¿Qué significa MI AN JAM NI DA?","opts":["Gracias", "Enhorabuena", "Lo siento", "Monitor"],"corr":2,"sec":"Vocabulario Coreano","corr_txt":"Lo siento"},
-  {"q":"¿Cuándo y por quién fue fundada la Federación Internacional de Hapkido?","opts":["Caída lateral", "Defensa al centro con la zona interna del antebrazo", "10 de enero de 1975", "En 1974 por el gran maestro Myung Kwan Sik (alumno directo de Choi Yong Sul)."],"corr":3,"sec":"Federación Internacional","corr_txt":"En 1974 por el gran maestro Myung Kwan Sik (alumno directo de Choi Yong Sul)."},
-  {"q":"¿Qué significa TUE CHANG?","opts":["Juez", "Descalificación", "Punto válido", "Combate"],"corr":1,"sec":"Combate","corr_txt":"Descalificación"},
-  {"q":"¿Qué significa CHIKKI?","opts":["Defensa abajo", "Golpe o Ataque", "Ataque con golpe de puño", "Defensa"],"corr":1,"sec":"Formas de Defensa","corr_txt":"Golpe o Ataque"},
-  {"q":"¿Qué pasó después de que el instructor los abandonara?","opts":["Porque las artes marciales en el país eran bastante cerradas.", "El maestro Kang, fundador del Taekwondo en Venezuela (1973).", "Cada quien tomó su propio camino, y el Master Mendizábal y otros decidieron formar la AVH.", "El Master German Alpire de la Nam Moo Kwan Hapkido Association se encargó de nivelar en Hapkido a la organización 'Gae Beek', de la cual Mendizábal formaba parte."],"corr":2,"sec":"Master Mendizábal","corr_txt":"Cada quien tomó su propio camino, y el Master Mendizábal y otros decidieron formar la AVH."},
-  {"q":"¿Qué es MONTONG JIRUGUI?","opts":["Pegar con el codo circular", "Golpe al medio", "Golpe con la mano hacia abajo (punta de dedos)", "Golpe arriba"],"corr":1,"sec":"Ataques","corr_txt":"Golpe al medio"},
-  {"q":"¿Qué ocurrió en 1988 con Mendizábal?","opts":["Porque las artes marciales en el país eran bastante cerradas.", "A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal.", "El maestro Kang, fundador del Taekwondo en Venezuela (1973).", "El Master German Alpire de la Nam Moo Kwan Hapkido Association se encargó de nivelar en Hapkido a la organización 'Gae Beek', de la cual Mendizábal formaba parte."],"corr":3,"sec":"Master Mendizábal","corr_txt":"El Master German Alpire de la Nam Moo Kwan Hapkido Association se encargó de nivelar en Hapkido a la organización 'Gae Beek', de la cual Mendizábal formaba parte."},
-  {"q":"¿Qué es AN DARI FURIGUI?","opts":["Círculo de pierna exterior", "Patada circular", "Patada semicircular baja", "Círculo de pierna interior"],"corr":3,"sec":"Técnicas de Pierna","corr_txt":"Círculo de pierna interior"},
-  {"q":"¿Qué significa KUK KI E DE JA YO?","opts":["Enhorabuena", "Saludo al maestro", "Saludo a la bandera", "Traje de taekwondo"],"corr":2,"sec":"Vocabulario Coreano","corr_txt":"Saludo a la bandera"},
-  {"q":"¿Dónde estaban localizadas la casa y escuela de Takeda Sokaku?","opts":["El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas.", "Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida.", "Ji Han Jae y In Hyuk Suh.", "En la Montaña de Su, en el área de Hokkaido."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"En la Montaña de Su, en el área de Hokkaido."},
-  {"q":"¿Qué alumnos destacaban en la academia de 1953?","opts":["Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas.", "La 'Korea Kido Association', donde Choi Yong Sul era el presidente.", "Quedó huérfano y fue llevado a Japón.", "Ji Han Jae y Myung Kwang Sik."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"Ji Han Jae y Myung Kwang Sik."},
-  {"q":"¿Qué significa SONNAL?","opts":["Lateral", "Hacia fuera", "Golpear", "Canto exterior de la mano"],"corr":3,"sec":"Partes del Cuerpo","corr_txt":"Canto exterior de la mano"},
-  {"q":"¿Qué significa CHUMBI?","opts":["Amonestación", "Coquilla", "Competidor", "Preparados"],"corr":3,"sec":"Combate","corr_txt":"Preparados"},
-  {"q":"¿Cuál es el objetivo del Hapkido frente a un oponente?","opts":["No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías.", "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.", "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía", "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física."],"corr":0,"sec":"Definición y Principios","corr_txt":"No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías."},
-  {"q":"¿Qué significa SIGAN?","opts":["Vencedor Azul / Vencedor Rojo", "Separarse", "Tiempo", "Reglas de competición"],"corr":2,"sec":"Combate","corr_txt":"Tiempo"},
-  {"q":"¿Qué referencia tiene el Ying Yang en el Hapkido?","opts":["A las energías que hay que dominar para poder pasar del impulso de furia a la calma en segundos al momento de realizar y culminar una técnica o en combate.", "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado", "Lateral", "JANA (Primero)"],"corr":0,"sec":"Ying Yang","corr_txt":"A las energías que hay que dominar para poder pasar del impulso de furia a la calma en segundos al momento de realizar y culminar una técnica o en combate."},
-  {"q":"¿Cuándo murió Takeda Sokaku?","opts":["Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio.", "Poco después de la muerte de Takeda, en Taegu, provincia de Kyung Buk.", "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.", "El 25 de abril de 1943."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"El 25 de abril de 1943."},
-  {"q":"¿Qué es YOP JIRUGUI?","opts":["Golpe con el arco interior de la mano", "Golpe con la palma de la mano", "Pegar con el canto de la mano al cuello", "Golpe lateral"],"corr":3,"sec":"Ataques","corr_txt":"Golpe lateral"},
-  {"q":"¿Qué es SONNAL MOK CHIGUI?","opts":["Golpe arriba", "Golpe al medio", "Pegar con el canto de la mano al cuello", "Golpe lateral"],"corr":2,"sec":"Ataques","corr_txt":"Pegar con el canto de la mano al cuello"},
-  {"q":"¿Por qué Choi Yong Sul tuvo que cambiar su nombre y aprender costumbres japonesas?","opts":["1953.", "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano.", "Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años.", "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano."},
-  {"q":"¿Cuántas técnicas desarrolló y dominó Takeda Sokaku en su sistema?","opts":["3808 técnicas.", "1953.", "En 1948, a los 44 años.", "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas."],"corr":0,"sec":"Historia de Choi Yong Sul","corr_txt":"3808 técnicas."},
-  {"q":"¿Cómo conoció Choi a Takeda Sokaku?","opts":["Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo.", "Choi no le gustó y debido a su protesta constante, Morimoto lo abandonó en el pueblo de Moji en Japón.", "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.", "Kintaro Wadanabi era amigo íntimo de Takeda Sokaku y lo presentó ante él. Choi señaló una escena de artes marciales en un mural del templo diciendo que eso quería ser."],"corr":3,"sec":"Entrevista a Choi Yong Sul","corr_txt":"Kintaro Wadanabi era amigo íntimo de Takeda Sokaku y lo presentó ante él. Choi señaló una escena de artes marciales en un mural del templo diciendo que eso quería ser."},
-  {"q":"¿Qué significa SI YO?","opts":["Cuartel general", "Decano de Maestros", "Cinturón", "Adiós"],"corr":3,"sec":"Vocabulario Coreano","corr_txt":"Adiós"},
-  {"q":"¿Qué significa CHU KA JAM NI DA?","opts":["Enhorabuena", "Traje de taekwondo", "Adiós", "Cinturón"],"corr":0,"sec":"Vocabulario Coreano","corr_txt":"Enhorabuena"},
-  {"q":"¿Qué significa KAMCHONG?","opts":["Protector bucal", "Rojo / Azul", "Reglas de competición", "Amonestación"],"corr":3,"sec":"Combate","corr_txt":"Amonestación"},
-  {"q":"Nombra 8 luxaciones vistas en el material:","opts":["Inmovilizaciones en el suelo", "Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas", "Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano", "Luxaciones"],"corr":2,"sec":"Inmovilizaciones","corr_txt":"Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano"},
-  {"q":"¿Qué es OPUN SON KUT?","opts":["Golpe lateral", "Pegar con el codo circular", "Golpe arriba", "Golpe con la mano hacia abajo (punta de dedos)"],"corr":3,"sec":"Ataques","corr_txt":"Golpe con la mano hacia abajo (punta de dedos)"},
-  {"q":"¿Cómo se dice 2 en coreano?","opts":["DUL (Segundo)", "NET (Cuarto)", "YOL (Décimo)", "YOSOP (Sexto)"],"corr":0,"sec":"Números Coreanos","corr_txt":"DUL (Segundo)"},
-  {"q":"¿Cuál es el objetivo de la Federación Internacional?","opts":["Promover la práctica de las artes marciales coreanas del Hapkido en el mundo.", "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.", "Primero Yu Kwon Sool, luego Hapki-Yu-Sul (Aiki-Ju-Jitsu, escuela Yawara Ryu), y finalmente Hapkido.", "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía."],"corr":0,"sec":"Federación Internacional","corr_txt":"Promover la práctica de las artes marciales coreanas del Hapkido en el mundo."},
-  {"q":"¿Qué significa KYORUGUI?","opts":["Combate", "Zona de competición", "Punto válido", "Competidor"],"corr":0,"sec":"Combate","corr_txt":"Combate"},
-  {"q":"¿Qué significa GONG KIOK?","opts":["Manos se cruzan al salir", "Ataque", "Una mano ayuda a la otra", "Atrás, retroceder"],"corr":1,"sec":"Acciones","corr_txt":"Ataque"},
-  {"q":"Nombra 15 proyecciones básicas vistas en el material:","opts":["Gran siega exterior, Gran siega interior, Pequeño gancho exterior, Proyección con la cadera (agarre al cuello), Proyección por el hombro dos manos, Caída flotante, Proyectar sujetando con el talón, Barrido al pie adelantado, Pequeña siega exterior, Barrido al interior del muslo, Barrido con la cadera, Vuelco por el hombro, Barrido con las dos manos, Proyección en círculo, Rueda por la rodilla", "Golpe al medio", "YOL (Décimo)", "Ji Han Jae y In Hyuk Suh."],"corr":0,"sec":"Proyecciones","corr_txt":"Gran siega exterior, Gran siega interior, Pequeño gancho exterior, Proyección con la cadera (agarre al cuello), Proyección por el hombro dos manos, Caída flotante, Proyectar sujetando con el talón, Barrido al pie adelantado, Pequeña siega exterior, Barrido al interior del muslo, Barrido con la cadera, Vuelco por el hombro, Barrido con las dos manos, Proyección en círculo, Rueda por la rodilla"},
-  {"q":"¿Qué significa MONDOLLYO?","opts":["Salto", "Giro", "Media vuelta", "Patada"],"corr":1,"sec":"Acciones","corr_txt":"Giro"},
-  {"q":"¿Qué significa KWAN-CHANG-NIM?","opts":["Decano de Maestros", "Hola", "Maestro", "Lo siento"],"corr":0,"sec":"Vocabulario Coreano","corr_txt":"Decano de Maestros"},
-  {"q":"¿Qué significa BITURO?","opts":["Atrás, retroceder", "Defensa", "Retorcerse", "Manos se cruzan al salir"],"corr":2,"sec":"Acciones","corr_txt":"Retorcerse"},
-  {"q":"¿Qué significa BATANGSON?","opts":["Palma de la mano", "Mano hacia abajo", "Cuello", "Hacia fuera"],"corr":0,"sec":"Partes del Cuerpo","corr_txt":"Palma de la mano"},
-  {"q":"¿Qué significa GUMAN?","opts":["Competidor", "Gracias (en combate)", "Final", "Reglas de competición"],"corr":2,"sec":"Combate","corr_txt":"Final"},
-  {"q":"¿Qué significa DOBOM?","opts":["Arriba", "Hacia adentro", "Ejecutar dos acciones consecutivas", "Defensa al medio con el antebrazo"],"corr":2,"sec":"Dobom","corr_txt":"Ejecutar dos acciones consecutivas"},
-  {"q":"¿Qué arte marcial surgió durante la dinastía Silla y quiénes lo practicaban?","opts":["Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones.", "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.", "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea.", "El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas."],"corr":1,"sec":"Historia del Hapkido","corr_txt":"El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años."},
-  {"q":"¿Cómo se dice 6 en coreano?","opts":["AJOP (Noveno)", "YODUL (Octavo)", "YOSOP (Sexto)", "ILGOP (Séptimo)"],"corr":2,"sec":"Números Coreanos","corr_txt":"YOSOP (Sexto)"},
-  {"q":"¿Qué significa CHIRGUI?","opts":["Salto", "Mano hacia arriba / Mano hacia abajo", "Pinchar", "Posición"],"corr":2,"sec":"Acciones","corr_txt":"Pinchar"},
-  {"q":"¿En qué tres principios básicos se basa el Hapkido?","opts":["Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física.", "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.", "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía", "No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías."],"corr":2,"sec":"Definición y Principios","corr_txt":"Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía"},
-  {"q":"¿En qué año Choi abrió su propia academia en su casa?","opts":["El 15 de junio de 1986, a los 82 años.", "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro.", "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano.", "1953."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"1953."},
-  {"q":"¿Qué es BAT ANGSON NULO MAKI?","opts":["Defensa con el canto de la mano retorcida", "Defensa baja con ambos brazos", "Defensa lateral", "Defensa lateral con el borde externo del antebrazo"],"corr":1,"sec":"Defensas","corr_txt":"Defensa baja con ambos brazos"},
-  {"q":"¿Qué es PALKUP YOP CHIGUI?","opts":["Golpe con la palma de la mano", "Pegar con el codo lateral", "Golpe con la mano hacia abajo (punta de dedos)", "Golpe arriba"],"corr":1,"sec":"Ataques","corr_txt":"Pegar con el codo lateral"},
-  {"q":"¿Qué significa AP?","opts":["Derecha", "Al frente", "Al lado", "Atrás"],"corr":1,"sec":"Clasificación por Posición","corr_txt":"Al frente"},
-  {"q":"¿Qué significa I PAL POHODE?","opts":["Vencedor Azul / Vencedor Rojo", "Continuar", "Comenzar", "Protector bucal"],"corr":3,"sec":"Combate","corr_txt":"Protector bucal"},
-  {"q":"¿Cuáles son las fechas de Takeda Sogaku?","opts":["N: 20 de julio de 1904 | M: 15 de junio de 1986", "N: 4 de noviembre de 1859 | M: 25 de abril de 1943", "N: 12 de diciembre de 1937 | M: 14 de mayo de 2014", "24 de agosto de 1960"],"corr":1,"sec":"Maestros y Fechas","corr_txt":"N: 4 de noviembre de 1859 | M: 25 de abril de 1943"},
-  {"q":"¿Qué significa CHEBIPOM?","opts":["Pinchar", "Salto", "Girar 90° (frente a frente)", "Llegar más lejos"],"corr":3,"sec":"Acciones","corr_txt":"Llegar más lejos"},
-  {"q":"¿Qué significa literalmente la palabra Hap-Ki-Do?","opts":["Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física.", "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.", "No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías.", "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía"],"corr":1,"sec":"Definición y Principios","corr_txt":"Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'."},
-  {"q":"¿Qué significa YOP?","opts":["Antebrazo", "Lateral", "Cuello", "Circular"],"corr":1,"sec":"Partes del Cuerpo","corr_txt":"Lateral"},
-  {"q":"¿Qué significa CHIGUI?","opts":["Girar 90° (frente a frente)", "Pegar", "Patada", "Golpear"],"corr":1,"sec":"Acciones","corr_txt":"Pegar"},
-  {"q":"¿Qué significa FU CHIN?","opts":["Manos en cruz", "Golpear", "Salto", "Atrás, retroceder"],"corr":3,"sec":"Acciones","corr_txt":"Atrás, retroceder"},
-  {"q":"¿Qué significa CHIRIGUI?","opts":["Golpe o Ataque", "Ataque con golpe de puño", "Defensa", "Defensa hacia arriba"],"corr":1,"sec":"Formas de Defensa","corr_txt":"Ataque con golpe de puño"},
-  {"q":"¿Qué es PALKUP DOLLIO CHIGUI?","opts":["Pegar con la parte superior de los nudillos hacia fuera", "Golpe lateral", "Golpe con la mano hacia abajo (punta de dedos)", "Pegar con el codo circular"],"corr":3,"sec":"Ataques","corr_txt":"Pegar con el codo circular"},
-  {"q":"¿Qué significa HONG / CHONG?","opts":["Coquilla", "Final", "Rojo / Azul", "Punto válido"],"corr":2,"sec":"Combate","corr_txt":"Rojo / Azul"},
-  {"q":"¿Qué significa YU SHIM?","opts":["Amonestación", "Árbitro", "Juez", "Final"],"corr":1,"sec":"Combate","corr_txt":"Árbitro"},
-  {"q":"¿Cómo se dice 10 en coreano?","opts":["YOL (Décimo)", "YODUL (Octavo)", "AJOP (Noveno)", "NET (Cuarto)"],"corr":0,"sec":"Números Coreanos","corr_txt":"YOL (Décimo)"},
-  {"q":"¿Qué arte marcial enseñaba Takeda Sokaku?","opts":["Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan.", "El Daito Ryu Aiki-Jutsu. También era famoso maestro de espada y Jiu-Jitsu.", "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo.", "El 25 de abril de 1943."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"El Daito Ryu Aiki-Jutsu. También era famoso maestro de espada y Jiu-Jitsu."},
-  {"q":"¿Qué otras proyecciones aparecen en el material?","opts":["Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo.", "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano.", "En 1959.", "Pequeña siega interior, Proyección con la cadera (agarre a la espalda), Proyección por el hombro una mano, Rueda por los hombros, Proyectar cogiendo la pierna, Proyección flotante"],"corr":3,"sec":"Proyecciones","corr_txt":"Pequeña siega interior, Proyección con la cadera (agarre a la espalda), Proyección por el hombro una mano, Rueda por los hombros, Proyectar cogiendo la pierna, Proyección flotante"},
-  {"q":"¿Qué significa BU SHIM?","opts":["Tiempo médico (1 minuto)", "Gracias (en combate)", "Juez", "Preparados"],"corr":2,"sec":"Combate","corr_txt":"Juez"},
-  {"q":"¿Qué significa DEUK JUM?","opts":["Descalificación", "Combate", "Punto válido", "Amonestación"],"corr":2,"sec":"Combate","corr_txt":"Punto válido"},
-  {"q":"¿Qué es OKGORO MONTONG MAKI?","opts":["Defensa al medio con manos cruzadas", "Defensa lateral", "Defensa con el canto de la mano", "Defensa con el canto de la mano retorcida"],"corr":0,"sec":"Defensas","corr_txt":"Defensa al medio con manos cruzadas"},
-  {"q":"¿Cómo se dice 8 en coreano?","opts":["AJOP (Noveno)", "YODUL (Octavo)", "NET (Cuarto)", "YOL (Décimo)"],"corr":1,"sec":"Números Coreanos","corr_txt":"YODUL (Octavo)"},
-  {"q":"¿Qué es BAT ANGSON MONTONG MAKI?","opts":["Defensa al medio con el dorso de la mano", "Defensa con el canto de la mano", "Defensa al medio con ambos antebrazos", "Defensa al medio con el antebrazo"],"corr":2,"sec":"Defensas","corr_txt":"Defensa al medio con ambos antebrazos"},
-  {"q":"¿Qué es DOBOM CHUMOK CHIRIGUI?","opts":["24 de agosto de 1960", "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía", "Doble puño / Puños consecutivos", "El maestro Kang, fundador del Taekwondo en Venezuela (1973)."],"corr":2,"sec":"Dobom","corr_txt":"Doble puño / Puños consecutivos"},
-  {"q":"¿Qué es FURIO CHAGUI?","opts":["Patada enganchando", "Patada semicircular baja", "Patada enganchando con pierna recta", "Círculo de pierna interior"],"corr":2,"sec":"Técnicas de Pierna","corr_txt":"Patada enganchando con pierna recta"},
-  {"q":"¿En qué arte es instructor Marco Tulio Vargas?","opts":["Instructor de la escuela de custodias del Ministerio de Interior y Justicia.", "En numerosas oportunidades en formas.", "Hapkido y Taekwondo.", "De la 'IUNEP' (Ministerio de Interior y Justicia)."],"corr":2,"sec":"Master Marco Tulio Vargas","corr_txt":"Hapkido y Taekwondo."},
-  {"q":"¿Qué es KOKKI SHU?","opts":["Luxaciones", "Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano", "Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas", "Inmovilizaciones en el suelo"],"corr":0,"sec":"Inmovilizaciones","corr_txt":"Luxaciones"},
-  {"q":"¿Qué significa GAM SA JAM NI DA?","opts":["Gracias", "Decano de Maestros", "Corea", "Saludo al maestro"],"corr":0,"sec":"Vocabulario Coreano","corr_txt":"Gracias"},
-  {"q":"¿Qué emblema se creó en 1959 y qué representa?","opts":["Más de 30 años. Durante 20 años de su entrenamiento se apartó en su casa.", "1953.", "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.", "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas."},
-  {"q":"¿Qué significa MONDORA?","opts":["Giro del cuerpo", "Al lado", "Colocar frente a frente", "Al frente"],"corr":0,"sec":"Clasificación por Posición","corr_txt":"Giro del cuerpo"},
-  {"q":"¿Qué es ZEMPO KAITEN UKEMI?","opts":["Caída lateral", "Caída con rollo hacia adelante", "Caída hacia adelante", "Caída hacia atrás"],"corr":1,"sec":"Caídas","corr_txt":"Caída con rollo hacia adelante"},
-  {"q":"¿Qué significa PIJAGUI?","opts":["Golpear", "Salto", "Esquivar", "Una mano ayuda a la otra"],"corr":2,"sec":"Acciones","corr_txt":"Esquivar"},
-  {"q":"¿Qué significa YOP?","opts":["Giro del cuerpo", "Hacia fuera", "Al lado", "Derecha"],"corr":2,"sec":"Clasificación por Posición","corr_txt":"Al lado"},
-  {"q":"¿Cómo se dice 4 en coreano?","opts":["YODUL (Octavo)", "NET (Cuarto)", "ILGOP (Séptimo)", "AJOP (Noveno)"],"corr":1,"sec":"Números Coreanos","corr_txt":"NET (Cuarto)"},
-  {"q":"¿Con quién entrenó Taekwondo?","opts":["A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal.", "El Master German Alpire de la Nam Moo Kwan Hapkido Association se encargó de nivelar en Hapkido a la organización 'Gae Beek', de la cual Mendizábal formaba parte.", "Porque las artes marciales en el país eran bastante cerradas.", "Con el maestro Carlos Flores Medina."],"corr":3,"sec":"Master Mendizábal","corr_txt":"Con el maestro Carlos Flores Medina."},
-  {"q":"¿Qué le pasó a Choi Yong Sul a los 6 años?","opts":["El 25 de abril de 1943.", "Quedó huérfano y fue llevado a Japón.", "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro.", "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"Quedó huérfano y fue llevado a Japón."},
-  {"q":"¿Qué significa CHUNGENG POHODE?","opts":["Espinillera", "Preparados", "Descalificación", "Separarse"],"corr":0,"sec":"Combate","corr_txt":"Espinillera"},
-  {"q":"¿Qué significa DOLLIO?","opts":["Puño", "Golpear", "Antebrazo", "Circular"],"corr":3,"sec":"Partes del Cuerpo","corr_txt":"Circular"},
-  {"q":"¿Cuáles son los 4 valores esenciales que debe tener un hapkidoka?","opts":["Todas las anteriores", "Humildad: Virtud humana de reconocer nuestras propias capacidades y limitaciones. Ausencia de soberbia. Integridad: Cualidad de una persona para tomar decisiones buenas así nadie lo esté observando. Honestidad: Ser honesto o siempre hablar con la verdad en cualquier situación de la vida. Honrar a padres y maestro: Respetar y admirar a ambos por quienes somos hoy en día y lo que sabemos.", "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.", "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía."],"corr":1,"sec":"Filosofía","corr_txt":"Humildad: Virtud humana de reconocer nuestras propias capacidades y limitaciones. Ausencia de soberbia. Integridad: Cualidad de una persona para tomar decisiones buenas así nadie lo esté observando. Honestidad: Ser honesto o siempre hablar con la verdad en cualquier situación de la vida. Honrar a padres y maestro: Respetar y admirar a ambos por quienes somos hoy en día y lo que sabemos."},
-  {"q":"¿Qué nombre le puso Choi a su arte al volver a Corea?","opts":["Primero Yu Kwon Sool, luego Hapki-Yu-Sul (Aiki-Ju-Jitsu, escuela Yawara Ryu), y finalmente Hapkido.", "En Taegu.", "Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas.", "Ji Han Jae y In Hyuk Suh."],"corr":0,"sec":"Historia de Choi Yong Sul","corr_txt":"Primero Yu Kwon Sool, luego Hapki-Yu-Sul (Aiki-Ju-Jitsu, escuela Yawara Ryu), y finalmente Hapkido."},
-  {"q":"¿Qué es MORI POHODE?","opts":["Pegar con el codo lateral", "Poco después de la muerte de Takeda, en Taegu, provincia de Kyung Buk.", "Hola", "Casco"],"corr":3,"sec":"Protecciones","corr_txt":"Casco"},
-  {"q":"¿Qué es USHIRO UKEMI?","opts":["Caída lateral", "Caída hacia atrás", "Caída con rollo hacia adelante", "Caída hacia adelante"],"corr":1,"sec":"Caídas","corr_txt":"Caída hacia atrás"},
-  {"q":"¿Por qué era informal la instrucción de artes marciales en Venezuela entre los años 60 y 80?","opts":["En 1984.", "Porque las artes marciales en el país eran bastante cerradas.", "El maestro Kang, fundador del Taekwondo en Venezuela (1973).", "Con el maestro Carlos Flores Medina."],"corr":1,"sec":"Master Mendizábal","corr_txt":"Porque las artes marciales en el país eran bastante cerradas."},
-  {"q":"¿Qué significa KIONNE?","opts":["Movimientos con números", "Monitor", "Corea", "Movimientos sin números"],"corr":3,"sec":"Vocabulario Coreano","corr_txt":"Movimientos sin números"},
-  {"q":"¿Qué es MONTONG MAKI?","opts":["Defensa lateral", "Defensa con el canto de la mano", "Defensa con el canto de la mano retorcida", "Defensa al medio con el antebrazo"],"corr":3,"sec":"Defensas","corr_txt":"Defensa al medio con el antebrazo"},
-  {"q":"¿Qué pasó con Morimoto?","opts":["Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.", "Choi no le gustó y debido a su protesta constante, Morimoto lo abandonó en el pueblo de Moji en Japón.", "Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos.", "Kintaro Wadanabi."],"corr":1,"sec":"Entrevista a Choi Yong Sul","corr_txt":"Choi no le gustó y debido a su protesta constante, Morimoto lo abandonó en el pueblo de Moji en Japón."},
-  {"q":"¿Qué es BAKKAT PALMOK MAKKI?","opts":["Defensa con el borde externo de la muñeca", "Defensa media o al medio", "Defensa al centro con la zona externa del antebrazo", "Defensa con el borde interno de la muñeca"],"corr":0,"sec":"Formas de Defensa","corr_txt":"Defensa con el borde externo de la muñeca"},
-  {"q":"¿Qué significa KIOPA?","opts":["Retorcerse", "Rompimiento", "Una mano ayuda a la otra", "Adelante, avanzar"],"corr":1,"sec":"Acciones","corr_txt":"Rompimiento"},
-  {"q":"¿Quién fue el primer alumno importante de Choi en Corea?","opts":["Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida.", "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro.", "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo.", "En Taegu."],"corr":2,"sec":"Historia de Choi Yong Sul","corr_txt":"Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo."},
-  {"q":"¿Qué significa SA BOM NIM?","opts":["Saludo al maestro", "Maestro", "Corea", "Cinturón"],"corr":1,"sec":"Vocabulario Coreano","corr_txt":"Maestro"},
-  {"q":"¿Qué significa DO BOK?","opts":["Traje de taekwondo", "No / Sí", "Adiós", "Movimientos sin números"],"corr":0,"sec":"Vocabulario Coreano","corr_txt":"Traje de taekwondo"},
-  {"q":"¿Cómo se dice 1 en coreano (ordinal)?","opts":["JANA (Primero)", "YODUL (Octavo)", "SET (Tercero)", "NET (Cuarto)"],"corr":0,"sec":"Números Coreanos","corr_txt":"JANA (Primero)"},
-  {"q":"¿Cómo se dice 7 en coreano?","opts":["ILGOP (Séptimo)", "SET (Tercero)", "YOSOP (Sexto)", "AJOP (Noveno)"],"corr":0,"sec":"Números Coreanos","corr_txt":"ILGOP (Séptimo)"},
-  {"q":"¿Qué es AN MIRO CHAGUI?","opts":["Empujar con el pie", "Patada enganchando con pierna recta", "Patada circular", "Patada hacia atrás"],"corr":0,"sec":"Técnicas de Pierna","corr_txt":"Empujar con el pie"},
-  {"q":"¿De qué academias surgió la AVH?","opts":["El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.", "En 1993.", "Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez.", "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país."],"corr":2,"sec":"Asociación Venezolana","corr_txt":"Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez."},
-  {"q":"¿Qué hizo In Hyuk Suh?","opts":["En la Montaña de Su, en el área de Hokkaido.", "Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'.", "Se separó para reorganizar el Ku Sul Won, un arte parecido al Hapkido con más énfasis en armas y Hyong (formas).", "En 1954, por sugerencia de Seo Bok Seob."],"corr":2,"sec":"Historia de Choi Yong Sul","corr_txt":"Se separó para reorganizar el Ku Sul Won, un arte parecido al Hapkido con más énfasis en armas y Hyong (formas)."},
-  {"q":"¿Qué significa CHECHO / OPO?","opts":["Pinchar", "Llegar más lejos", "Patada", "Mano hacia arriba / Mano hacia abajo"],"corr":3,"sec":"Acciones","corr_txt":"Mano hacia arriba / Mano hacia abajo"},
-  {"q":"¿Cómo se dice 3 en coreano?","opts":["YODUL (Octavo)", "DASOT (Quinto)", "SET (Tercero)", "DUL (Segundo)"],"corr":2,"sec":"Números Coreanos","corr_txt":"SET (Tercero)"},
-  {"q":"¿Qué es MONTONG MAKKI?","opts":["Defensa al centro con la zona externa del antebrazo", "Defensa media o al medio", "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado", "Golpe o Ataque"],"corr":1,"sec":"Formas de Defensa","corr_txt":"Defensa media o al medio"},
-  {"q":"¿Qué es AP CHAGUI?","opts":["Patada al frente", "Patada descendente", "Patada enganchando", "Círculo de pierna interior"],"corr":0,"sec":"Técnicas de Pierna","corr_txt":"Patada al frente"},
-  {"q":"¿Qué significa DUIRO DORA?","opts":["Giro", "Media vuelta", "Defensa", "Ataque"],"corr":1,"sec":"Acciones","corr_txt":"Media vuelta"},
-  {"q":"¿Qué es AN PALMOK MONTONG MAKKI?","opts":["Defensa al centro con la zona externa del antebrazo", "Defensa con el borde interno de la muñeca", "Defensa abajo", "Defensa al centro con la zona interna del antebrazo"],"corr":3,"sec":"Formas de Defensa","corr_txt":"Defensa al centro con la zona interna del antebrazo"},
-  {"q":"¿Quiénes formaron la línea de instructores avanzados de la AVH?","opts":["Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez.", "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.", "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país.", "Master José Luis Mendizábal, Master Eulalio Vielma, Master Wilfredo Guette, Master Marco Tulio Vargas, Master Eliverio Vargas, Sabonim Fanny Rodríguez."],"corr":3,"sec":"Asociación Venezolana","corr_txt":"Master José Luis Mendizábal, Master Eulalio Vielma, Master Wilfredo Guette, Master Marco Tulio Vargas, Master Eliverio Vargas, Sabonim Fanny Rodríguez."},
-  {"q":"¿Qué significa CHOKIO?","opts":["Monitor", "Cinturón", "Gracias", "No / Sí"],"corr":0,"sec":"Vocabulario Coreano","corr_txt":"Monitor"},
-  {"q":"¿Quién era el monje que cuidó a Choi en el templo?","opts":["Kintaro Wadanabi.", "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.", "Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo.", "Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos."],"corr":0,"sec":"Entrevista a Choi Yong Sul","corr_txt":"Kintaro Wadanabi."},
-  {"q":"¿Qué significa YOSOK DONG YA?","opts":["Combinación", "Mano hacia arriba / Mano hacia abajo", "Pegar", "Media vuelta"],"corr":0,"sec":"Acciones","corr_txt":"Combinación"},
-  {"q":"¿Qué significa SONKUT?","opts":["Pegar", "Puño", "Punta de los dedos", "Cuello"],"corr":2,"sec":"Partes del Cuerpo","corr_txt":"Punta de los dedos"},
-  {"q":"¿Qué es BAKKAT PALMOK MONTONG MAKKI?","opts":["Defensa media o al medio", "Defensa con el borde externo de la muñeca", "Defensa hacia arriba", "Defensa al centro con la zona externa del antebrazo"],"corr":3,"sec":"Formas de Defensa","corr_txt":"Defensa al centro con la zona externa del antebrazo"},
-  {"q":"¿Cuántas personas había en el equipo de exhibición de Hawaii?","opts":["Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.", "En Kyoto.", "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados.", "Quedó huérfano y fue llevado a Japón."],"corr":0,"sec":"Historia de Choi Yong Sul","corr_txt":"Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros."},
-  {"q":"¿Qué significa YOA?","opts":["Hacia adentro", "Atrás", "Izquierda", "Derecha"],"corr":2,"sec":"Clasificación por Posición","corr_txt":"Izquierda"},
-  {"q":"¿Qué significa U?","opts":["Al lado", "Atrás", "Giro del cuerpo", "Derecha"],"corr":3,"sec":"Clasificación por Posición","corr_txt":"Derecha"},
-  {"q":"¿Cuántas de esas técnicas dominó Choi Yong Sul personalmente?","opts":["Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas.", "En la Montaña de Su, en el área de Hokkaido.", "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.", "El 20 de julio de 1904 en la provincia de Chung Buk (Chong Buk), Corea del Sur."],"corr":0,"sec":"Historia de Choi Yong Sul","corr_txt":"Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas."},
-  {"q":"¿Qué es BATANG SON TOK JIRUGUI?","opts":["Golpe con la palma de la mano", "Pegar con el canto de la mano al cuello", "Golpe con el arco interior de la mano", "Golpe arriba"],"corr":0,"sec":"Ataques","corr_txt":"Golpe con la palma de la mano"},
-  {"q":"¿Qué ocurrió en 1995 con la AVH?","opts":["Master José Luis Mendizábal, Master Eulalio Vielma, Master Wilfredo Guette, Master Marco Tulio Vargas, Master Eliverio Vargas, Sabonim Fanny Rodríguez.", "En 1993.", "Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez.", "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas."],"corr":3,"sec":"Asociación Venezolana","corr_txt":"El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas."},
-  {"q":"¿Qué significa MAKKI?","opts":["Defensa", "Defensa abajo", "Defensa al centro con la zona interna del antebrazo", "Golpe o Ataque"],"corr":0,"sec":"Formas de Defensa","corr_txt":"Defensa"},
-  {"q":"¿Qué significa JIRUGUI?","opts":["Puño", "Golpear", "Canto interior de la mano (dorso)", "Mano hacia abajo"],"corr":1,"sec":"Partes del Cuerpo","corr_txt":"Golpear"},
-  {"q":"¿Qué es OLGUL JIRUGUI?","opts":["Pegar con el codo lateral", "Golpe arriba", "Golpe lateral", "Pegar con el canto exterior de la mano"],"corr":1,"sec":"Ataques","corr_txt":"Golpe arriba"},
-  {"q":"¿Dónde fue a parar Choi después de ser abandonado?","opts":["Choi no le gustó y debido a su protesta constante, Morimoto lo abandonó en el pueblo de Moji en Japón.", "Kintaro Wadanabi.", "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.", "Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos."],"corr":2,"sec":"Entrevista a Choi Yong Sul","corr_txt":"Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista."},
-  {"q":"¿Qué significa JIRUGUI?","opts":["Media vuelta", "Golpear", "Llegar más lejos", "Retorcerse"],"corr":1,"sec":"Acciones","corr_txt":"Golpear"},
-  {"q":"¿Qué significa KORYO?","opts":["Bandera", "Movimientos sin números", "Movimientos con números", "Corea"],"corr":3,"sec":"Vocabulario Coreano","corr_txt":"Corea"},
-  {"q":"¿Qué significa CHONG SUNG / HONG SUNG?","opts":["Vencedor Azul / Vencedor Rojo", "Continuar", "Punto válido", "Tiempo"],"corr":0,"sec":"Combate","corr_txt":"Vencedor Azul / Vencedor Rojo"},
-  {"q":"¿Qué es YOP CHAGUI?","opts":["Círculo de pierna exterior", "Patada lateral", "Patada semicircular baja exterior", "Círculo de pierna interior"],"corr":1,"sec":"Técnicas de Pierna","corr_txt":"Patada lateral"},
-  {"q":"¿Qué significa GECHO?","opts":["Manos se cruzan al salir", "Ataque", "Pinchar", "Llegar más lejos"],"corr":0,"sec":"Acciones","corr_txt":"Manos se cruzan al salir"},
-  {"q":"¿Qué significa CHUMOK?","opts":["Punta de los dedos", "Puño", "Golpear", "Cuello"],"corr":1,"sec":"Partes del Cuerpo","corr_txt":"Puño"},
-  {"q":"¿Cómo se llamaba originalmente?","opts":["Movimientos con números", "'Mundial Hapkido Federation'.", "Defensa media o al medio", "Tiempo"],"corr":1,"sec":"Federación Internacional","corr_txt":"'Mundial Hapkido Federation'."},
-  {"q":"¿A qué edad fue llevado Choi a Japón y a qué edad fue adoptado por Takeda?","opts":["En 1954, por sugerencia de Seo Bok Seob.", "1953.", "Casi 28 años.", "Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años."},
-  {"q":"¿Cómo murió Takeda Sokaku?","opts":["Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años.", "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados.", "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan.", "Quedó huérfano y fue llevado a Japón."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados."},
-  {"q":"¿Qué significa KYONGO?","opts":["Amonestación", "Continuar", "Gracias (en combate)", "Tiempo médico (1 minuto)"],"corr":2,"sec":"Combate","corr_txt":"Gracias (en combate)"},
-  {"q":"¿Qué significa CHUA U LLANG U?","opts":["Girar 90° (frente a frente)", "Pegar", "Pinchar", "Media vuelta"],"corr":0,"sec":"Acciones","corr_txt":"Girar 90° (frente a frente)"},
-  {"q":"¿Cuáles son los 3 principios básicos para aprender según la filosofía?","opts":["Todas las anteriores", "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía.", "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.", "1) Así como la corriente del fluido penetra y rodea las obstrucciones, la fuerza del Hapkido entra y atraviesa a los oponentes. 2) Movimiento circular: Contratacando, oponiéndose y atacando. Por simple alteración del eje circular puede ser cambiado desde un frontal a un lateral. 3) No resistencia o armonía: Encontrar fuerzas con el mínimo esfuerzo o con la misma fuerza del oponente para no chocar con un adversario de poder."],"corr":3,"sec":"Filosofía","corr_txt":"1) Así como la corriente del fluido penetra y rodea las obstrucciones, la fuerza del Hapkido entra y atraviesa a los oponentes. 2) Movimiento circular: Contratacando, oponiéndose y atacando. Por simple alteración del eje circular puede ser cambiado desde un frontal a un lateral. 3) No resistencia o armonía: Encontrar fuerzas con el mínimo esfuerzo o con la misma fuerza del oponente para no chocar con un adversario de poder."},
-  {"q":"¿Qué es KOCHONG SHU?","opts":["Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano", "Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas", "Inmovilizaciones en el suelo", "Luxaciones"],"corr":2,"sec":"Inmovilizaciones","corr_txt":"Inmovilizaciones en el suelo"},
-  {"q":"¿En qué año y por sugerencia de quién se cambió el nombre a Yoo Sool?","opts":["El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas.", "Ji Han Jae y In Hyuk Suh.", "En Kyoto.", "En 1954, por sugerencia de Seo Bok Seob."],"corr":3,"sec":"Historia de Choi Yong Sul","corr_txt":"En 1954, por sugerencia de Seo Bok Seob."},
-  {"q":"¿Qué ocurrió en 1973?","opts":["En Taegu.", "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan.", "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas.", "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."],"corr":1,"sec":"Historia de Choi Yong Sul","corr_txt":"Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan."},
-  {"q":"¿Qué significa KYESOK?","opts":["Continuar", "Preparados", "Comenzar", "Protector bucal"],"corr":0,"sec":"Combate","corr_txt":"Continuar"},
-  {"q":"¿Cómo nació el Hapkido según la historia?","opts":["El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.", "El creador Choi Yong Sul se topó con Seo Bok-Seob (hijo de un señor que lo vio defenderse). Seo practicaba Judo. Entre los dos decidieron darle creación al Hapkido combinando los estilos: Daito-Ryu Aiki Jutsu (aprendido por Choi en Japón), Judo y el Taek-Kyon. Nació en el año 1959.", "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea.", "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones."],"corr":1,"sec":"Historia del Hapkido","corr_txt":"El creador Choi Yong Sul se topó con Seo Bok-Seob (hijo de un señor que lo vio defenderse). Seo practicaba Judo. Entre los dos decidieron darle creación al Hapkido combinando los estilos: Daito-Ryu Aiki Jutsu (aprendido por Choi en Japón), Judo y el Taek-Kyon. Nació en el año 1959."},
-  {"q":"¿Qué significa OPUM?","opts":["Mano hacia abajo", "Puño", "Cuello", "Punta de los dedos"],"corr":0,"sec":"Partes del Cuerpo","corr_txt":"Mano hacia abajo"},
-  {"q":"¿Cómo afectó la Segunda Guerra Mundial a la vida de Choi?","opts":["Trabajó con Takeda capturando desertores militares en las montañas. Takeda intervino para que Choi no fuera reclutado, porque si moriría se perdería el Daito Ryu Aiki-Jutsu completamente.", "En 1959.", "Quedó huérfano y fue llevado a Japón.", "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros."],"corr":0,"sec":"Historia de Choi Yong Sul","corr_txt":"Trabajó con Takeda capturando desertores militares en las montañas. Takeda intervino para que Choi no fuera reclutado, porque si moriría se perdería el Daito Ryu Aiki-Jutsu completamente."},
-  {"q":"¿Qué ocurrió durante la dinastía Yi con las artes marciales?","opts":["El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas.", "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones.", "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.", "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea."],"corr":3,"sec":"Historia del Hapkido","corr_txt":"Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea."},
-  {"q":"¿Qué significa CHAGUI?","opts":["Giro", "Pegar", "Patada", "Media vuelta"],"corr":2,"sec":"Acciones","corr_txt":"Patada"},
-  {"q":"¿Qué es DUNG CHUMOK BAKAT CHIGUI?","opts":["Golpe con la mano hacia abajo (punta de dedos)", "Pegar con la parte superior de los nudillos hacia fuera", "Pegar con el codo lateral", "Pegar con el codo circular"],"corr":1,"sec":"Ataques","corr_txt":"Pegar con la parte superior de los nudillos hacia fuera"},
-  {"q":"¿Qué es YAN SONNAL MONTONG MAKKI?","opts":["Defensa al centro con la zona externa del antebrazo", "Defensa con el borde interno de la muñeca", "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado", "Defensa hacia arriba"],"corr":2,"sec":"Formas de Defensa","corr_txt":"Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado"},
-  {"q":"¿Qué es YOKO UKEMI?","opts":["Caída hacia atrás", "Caída lateral", "Caída con rollo hacia adelante", "Caída hacia adelante"],"corr":1,"sec":"Caídas","corr_txt":"Caída lateral"},
-  {"q":"¿Qué es BAKAT DARI FURIGUI?","opts":["Patada semicircular baja exterior", "Patada circular", "Círculo de pierna exterior", "Patada lateral"],"corr":2,"sec":"Técnicas de Pierna","corr_txt":"Círculo de pierna exterior"},
-  {"q":"¿Qué significa KUKIWON?","opts":["Corea", "Decano de Maestros", "Cinturón", "Cuartel general"],"corr":3,"sec":"Vocabulario Coreano","corr_txt":"Cuartel general"},
-  {"q":"¿Cuáles son las fechas de Eulalio Vielma?","opts":["24 de agosto de 1960", "N: 12 de diciembre de 1937 | M: 14 de mayo de 2014", "N: 4 de noviembre de 1859 | M: 25 de abril de 1943", "N: 20 de julio de 1904 | M: 15 de junio de 1986"],"corr":1,"sec":"Maestros y Fechas","corr_txt":"N: 12 de diciembre de 1937 | M: 14 de mayo de 2014"}
+  {
+    "q": "¿Qué es BAKAT PALMOK MONTONG YOP MAKI?",
+    "opts": [
+      "Defensa lateral con el borde externo del antebrazo",
+      "Defensa al medio con manos cruzadas",
+      "Defensa lateral",
+      "Defensa con el canto de la mano retorcida"
+    ],
+    "corr": 0,
+    "sec": "Defensas",
+    "corr_txt": "Defensa lateral con el borde externo del antebrazo"
+  },
+  {
+    "q": "¿Qué arte se desarrolló en secreto durante 500 años y quiénes lo practicaban?",
+    "opts": [
+      "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea.",
+      "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.",
+      "El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas.",
+      "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones."
+    ],
+    "corr": 2,
+    "sec": "Historia del Hapkido",
+    "corr_txt": "El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas."
+  },
+  {
+    "q": "¿Quién era el maestro de Carlos Flores Medina?",
+    "opts": [
+      "El maestro Kang, fundador del Taekwondo en Venezuela (1973).",
+      "Porque las artes marciales en el país eran bastante cerradas.",
+      "A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal.",
+      "En 1984."
+    ],
+    "corr": 0,
+    "sec": "Master Mendizábal",
+    "corr_txt": "El maestro Kang, fundador del Taekwondo en Venezuela (1973)."
+  },
+  {
+    "q": "¿Qué es BANDAL CHAGUI?",
+    "opts": [
+      "Patada hacia atrás",
+      "Patada semicircular baja exterior",
+      "Patada semicircular baja",
+      "Círculo de pierna interior"
+    ],
+    "corr": 2,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada semicircular baja"
+  },
+  {
+    "q": "¿Por qué Takeda decidió adoptar a Choi?",
+    "opts": [
+      "Kintaro Wadanabi.",
+      "Kintaro Wadanabi era amigo íntimo de Takeda Sokaku y lo presentó ante él. Choi señaló una escena de artes marciales en un mural del templo diciendo que eso quería ser.",
+      "Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo.",
+      "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista."
+    ],
+    "corr": 2,
+    "sec": "Entrevista a Choi Yong Sul",
+    "corr_txt": "Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo."
+  },
+  {
+    "q": "¿Qué significa AN YONG JA SE YO?",
+    "opts": [
+      "Bandera",
+      "Gimnasio",
+      "Hola",
+      "Saludo al maestro"
+    ],
+    "corr": 2,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Hola"
+  },
+  {
+    "q": "¿Qué es NACKO CHAGUI?",
+    "opts": [
+      "Patada semicircular baja exterior",
+      "Patada enganchando",
+      "Patada circular",
+      "Patada hacia atrás"
+    ],
+    "corr": 1,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada enganchando"
+  },
+  {
+    "q": "Nombra 6 tipos de inmovilizaciones vistas en el material:",
+    "opts": [
+      "Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas",
+      "Luxaciones",
+      "Inmovilizaciones en el suelo",
+      "Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano"
+    ],
+    "corr": 0,
+    "sec": "Inmovilizaciones",
+    "corr_txt": "Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas"
+  },
+  {
+    "q": "¿Qué significa YOA U YANG U?",
+    "opts": [
+      "Atrás",
+      "Giro del cuerpo",
+      "Colocar frente a frente",
+      "Hacia fuera"
+    ],
+    "corr": 2,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Colocar frente a frente"
+  },
+  {
+    "q": "¿Qué significa SIMPAN JYONG?",
+    "opts": [
+      "Zona de competición",
+      "Reglas de competición",
+      "Juez",
+      "Árbitro"
+    ],
+    "corr": 1,
+    "sec": "Combate",
+    "corr_txt": "Reglas de competición"
+  },
+  {
+    "q": "¿Cuándo se conectó la AVH a la Federación Mundial de Hapkido?",
+    "opts": [
+      "Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez.",
+      "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.",
+      "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país.",
+      "En 1993."
+    ],
+    "corr": 3,
+    "sec": "Asociación Venezolana",
+    "corr_txt": "En 1993."
+  },
+  {
+    "q": "¿Qué significa KYESI?",
+    "opts": [
+      "Espinillera",
+      "Tiempo médico (1 minuto)",
+      "Reglas de competición",
+      "Descalificación"
+    ],
+    "corr": 1,
+    "sec": "Combate",
+    "corr_txt": "Tiempo médico (1 minuto)"
+  },
+  {
+    "q": "¿Cómo se dice 9 en coreano?",
+    "opts": [
+      "SET (Tercero)",
+      "NET (Cuarto)",
+      "DUL (Segundo)",
+      "AJOP (Noveno)"
+    ],
+    "corr": 3,
+    "sec": "Números Coreanos",
+    "corr_txt": "AJOP (Noveno)"
+  },
+  {
+    "q": "¿Qué es BITURO CHAGUI?",
+    "opts": [
+      "Patada enganchando",
+      "Patada lateral",
+      "Círculo de pierna exterior",
+      "Patada semicircular baja exterior"
+    ],
+    "corr": 3,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada semicircular baja exterior"
+  },
+  {
+    "q": "¿Qué significa OKGORO?",
+    "opts": [
+      "Retorcerse",
+      "Esquivar",
+      "Manos en cruz",
+      "Ataque"
+    ],
+    "corr": 2,
+    "sec": "Acciones",
+    "corr_txt": "Manos en cruz"
+  },
+  {
+    "q": "¿Qué significa SOGUI?",
+    "opts": [
+      "Salto",
+      "Posición",
+      "Mano hacia arriba / Mano hacia abajo",
+      "Golpear"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Posición"
+  },
+  {
+    "q": "¿En qué año inició sus entrenamientos de Taekwondo tradicional?",
+    "opts": [
+      "Porque las artes marciales en el país eran bastante cerradas.",
+      "En 1984.",
+      "Cada quien tomó su propio camino, y el Master Mendizábal y otros decidieron formar la AVH.",
+      "Con el maestro Carlos Flores Medina."
+    ],
+    "corr": 1,
+    "sec": "Master Mendizábal",
+    "corr_txt": "En 1984."
+  },
+  {
+    "q": "¿Qué significa TUIO?",
+    "opts": [
+      "Adelante, avanzar",
+      "Atrás, retroceder",
+      "Manos se cruzan al salir",
+      "Salto"
+    ],
+    "corr": 3,
+    "sec": "Acciones",
+    "corr_txt": "Salto"
+  },
+  {
+    "q": "¿Cuáles son las fechas de nacimiento y muerte de Choi Yong Sul?",
+    "opts": [
+      "24 de agosto de 1960",
+      "N: 4 de noviembre de 1859 | M: 25 de abril de 1943",
+      "10 de enero de 1975",
+      "N: 20 de julio de 1904 | M: 15 de junio de 1986"
+    ],
+    "corr": 3,
+    "sec": "Maestros y Fechas",
+    "corr_txt": "N: 20 de julio de 1904 | M: 15 de junio de 1986"
+  },
+  {
+    "q": "¿Dónde estaba el templo budista donde vivió Choi antes de conocer a Takeda?",
+    "opts": [
+      "Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida.",
+      "En Kyoto.",
+      "3808 técnicas.",
+      "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "En Kyoto."
+  },
+  {
+    "q": "¿Qué significa DUNG CHUMOK?",
+    "opts": [
+      "Palma de la mano",
+      "Pegar",
+      "Parte superior de los nudillos",
+      "Cuello"
+    ],
+    "corr": 2,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Parte superior de los nudillos"
+  },
+  {
+    "q": "¿Qué es SONNAL DUNG MONTONG MAKI?",
+    "opts": [
+      "Defensa al medio con el antebrazo",
+      "Defensa con el canto de la mano",
+      "Defensa al medio con ambos antebrazos",
+      "Defensa al medio con el dorso de la mano"
+    ],
+    "corr": 3,
+    "sec": "Defensas",
+    "corr_txt": "Defensa al medio con el dorso de la mano"
+  },
+  {
+    "q": "¿A qué edad viajó Choi a Hawaii con Takeda?",
+    "opts": [
+      "Ji Han Jae y Myung Kwang Sik.",
+      "1953.",
+      "El 25 de abril de 1943.",
+      "Casi 28 años."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Casi 28 años."
+  },
+  {
+    "q": "¿Qué significa SI CHAK?",
+    "opts": [
+      "Espinillera",
+      "Comenzar",
+      "Combate",
+      "Descalificación"
+    ],
+    "corr": 1,
+    "sec": "Combate",
+    "corr_txt": "Comenzar"
+  },
+  {
+    "q": "¿Qué significa NULO?",
+    "opts": [
+      "Arriba",
+      "Hacia abajo",
+      "Codo",
+      "Pegar"
+    ],
+    "corr": 1,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Hacia abajo"
+  },
+  {
+    "q": "¿En qué año empezó Choi a enseñar su arte en Corea?",
+    "opts": [
+      "En la Montaña de Su, en el área de Hokkaido.",
+      "En 1948, a los 44 años.",
+      "3808 técnicas.",
+      "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "En 1948, a los 44 años."
+  },
+  {
+    "q": "¿Qué significa DUIT?",
+    "opts": [
+      "Al frente",
+      "Al lado",
+      "Colocar frente a frente",
+      "Atrás"
+    ],
+    "corr": 3,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Atrás"
+  },
+  {
+    "q": "¿Qué hizo Ji Han Jae?",
+    "opts": [
+      "Ji Han Jae y Myung Kwang Sik.",
+      "El 20 de julio de 1904 en la provincia de Chung Buk (Chong Buk), Corea del Sur.",
+      "Se separó para reorganizar el Ku Sul Won, un arte parecido al Hapkido con más énfasis en armas y Hyong (formas).",
+      "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro."
+  },
+  {
+    "q": "¿Dónde es instructor?",
+    "opts": [
+      "De la 'IUNEP' (Ministerio de Interior y Justicia).",
+      "En numerosas oportunidades en formas.",
+      "Instructor de la escuela de custodias del Ministerio de Interior y Justicia.",
+      "Hapkido y Taekwondo."
+    ],
+    "corr": 0,
+    "sec": "Master Marco Tulio Vargas",
+    "corr_txt": "De la 'IUNEP' (Ministerio de Interior y Justicia)."
+  },
+  {
+    "q": "¿Qué significa TI?",
+    "opts": [
+      "Gimnasio",
+      "Cinturón",
+      "Traje de taekwondo",
+      "Movimientos con números"
+    ],
+    "corr": 1,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Cinturón"
+  },
+  {
+    "q": "¿Qué es DOLLYO CHAGUI?",
+    "opts": [
+      "Patada circular",
+      "Círculo de pierna interior",
+      "Patada enganchando",
+      "Patada enganchando con pierna recta"
+    ],
+    "corr": 0,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada circular"
+  },
+  {
+    "q": "¿Cuándo y dónde se estableció Choi al volver a Corea?",
+    "opts": [
+      "3808 técnicas.",
+      "Poco después de la muerte de Takeda, en Taegu, provincia de Kyung Buk.",
+      "Casi 28 años.",
+      "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Poco después de la muerte de Takeda, en Taegu, provincia de Kyung Buk."
+  },
+  {
+    "q": "¿Qué significa AN?",
+    "opts": [
+      "Hacia adentro",
+      "Atrás",
+      "Hacia fuera",
+      "Derecha"
+    ],
+    "corr": 0,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Hacia adentro"
+  },
+  {
+    "q": "¿Quién raptó a Choi Yong Sul cuando era niño?",
+    "opts": [
+      "Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos.",
+      "Kintaro Wadanabi.",
+      "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.",
+      "Kintaro Wadanabi era amigo íntimo de Takeda Sokaku y lo presentó ante él. Choi señaló una escena de artes marciales en un mural del templo diciendo que eso quería ser."
+    ],
+    "corr": 0,
+    "sec": "Entrevista a Choi Yong Sul",
+    "corr_txt": "Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos."
+  },
+  {
+    "q": "¿Qué significa MAKI?",
+    "opts": [
+      "Ataque",
+      "Defensa",
+      "Atrás, retroceder",
+      "Media vuelta"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Defensa"
+  },
+  {
+    "q": "¿Qué significa SA BOM NIM QUE KIONNE?",
+    "opts": [
+      "Lo siento",
+      "Decano de Maestros",
+      "Bandera",
+      "Saludo al maestro"
+    ],
+    "corr": 3,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Saludo al maestro"
+  },
+  {
+    "q": "¿Qué significa DOJANG?",
+    "opts": [
+      "Cinturón",
+      "Bandera",
+      "Gimnasio",
+      "Sala de entrenamiento"
+    ],
+    "corr": 3,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Sala de entrenamiento"
+  },
+  {
+    "q": "¿Qué es YOP MAKI?",
+    "opts": [
+      "Defensa al medio con el dorso de la mano",
+      "Defensa con el canto de la mano retorcida",
+      "Defensa al medio con el antebrazo",
+      "Defensa lateral"
+    ],
+    "corr": 3,
+    "sec": "Defensas",
+    "corr_txt": "Defensa lateral"
+  },
+  {
+    "q": "¿Qué significa ARE?",
+    "opts": [
+      "Circular",
+      "Hacia abajo",
+      "Arriba",
+      "Abajo"
+    ],
+    "corr": 3,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Abajo"
+  },
+  {
+    "q": "¿Qué significa PALMOK?",
+    "opts": [
+      "Antebrazo",
+      "Circular",
+      "Codo",
+      "Hacia abajo"
+    ],
+    "corr": 0,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Antebrazo"
+  },
+  {
+    "q": "¿Qué significa BAKKAT?",
+    "opts": [
+      "Derecha",
+      "Izquierda",
+      "Al lado",
+      "Hacia fuera"
+    ],
+    "corr": 3,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Hacia fuera"
+  },
+  {
+    "q": "¿Qué es PAL POHODE?",
+    "opts": [
+      "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.",
+      "Antebrazos",
+      "Golpe con el arco interior de la mano",
+      "Retorcerse"
+    ],
+    "corr": 1,
+    "sec": "Protecciones",
+    "corr_txt": "Antebrazos"
+  },
+  {
+    "q": "¿Qué es NERYO CHAGUI?",
+    "opts": [
+      "Círculo de pierna interior",
+      "Patada enganchando",
+      "Patada al frente",
+      "Patada descendente"
+    ],
+    "corr": 3,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada descendente"
+  },
+  {
+    "q": "¿Cuál es su cargo actual?",
+    "opts": [
+      "Hapkido y Taekwondo.",
+      "Instructor de la escuela de custodias del Ministerio de Interior y Justicia.",
+      "De la 'IUNEP' (Ministerio de Interior y Justicia).",
+      "Por su labor al frente de la ONG en deporte penitenciario en Venezuela."
+    ],
+    "corr": 1,
+    "sec": "Master Marco Tulio Vargas",
+    "corr_txt": "Instructor de la escuela de custodias del Ministerio de Interior y Justicia."
+  },
+  {
+    "q": "¿Qué significa AKUMSON?",
+    "opts": [
+      "Palma de la mano",
+      "Arco interior de la mano",
+      "Lateral",
+      "Canto exterior de la mano"
+    ],
+    "corr": 1,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Arco interior de la mano"
+  },
+  {
+    "q": "¿Qué fundaron Choi Yong Sul y Ji Han Jae en 1963?",
+    "opts": [
+      "El Daito Ryu Aiki-Jutsu. También era famoso maestro de espada y Jiu-Jitsu.",
+      "En la Montaña de Su, en el área de Hokkaido.",
+      "Quedó huérfano y fue llevado a Japón.",
+      "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."
+  },
+  {
+    "q": "¿Qué significa GODURO?",
+    "opts": [
+      "Una mano ayuda a la otra",
+      "Manos en cruz",
+      "Rompimiento",
+      "Defensa"
+    ],
+    "corr": 0,
+    "sec": "Acciones",
+    "corr_txt": "Una mano ayuda a la otra"
+  },
+  {
+    "q": "¿Qué significa JOGU?",
+    "opts": [
+      "Competidor",
+      "Punto válido",
+      "Peto",
+      "Separarse"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Peto"
+  },
+  {
+    "q": "¿Qué significa KIONG KI CHANG?",
+    "opts": [
+      "Competidor",
+      "Vencedor Azul / Vencedor Rojo",
+      "Zona de competición",
+      "Peto"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Zona de competición"
+  },
+  {
+    "q": "¿En qué ha sido campeón?",
+    "opts": [
+      "Por su labor al frente de la ONG en deporte penitenciario en Venezuela.",
+      "Hapkido y Taekwondo.",
+      "De la 'IUNEP' (Ministerio de Interior y Justicia).",
+      "En numerosas oportunidades en formas."
+    ],
+    "corr": 3,
+    "sec": "Master Marco Tulio Vargas",
+    "corr_txt": "En numerosas oportunidades en formas."
+  },
+  {
+    "q": "¿Qué es ARE MAKKI?",
+    "opts": [
+      "Defensa",
+      "Defensa al centro con la zona interna del antebrazo",
+      "Defensa abajo",
+      "Defensa con el borde externo de la muñeca"
+    ],
+    "corr": 2,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa abajo"
+  },
+  {
+    "q": "¿Qué significa BAKAT?",
+    "opts": [
+      "Pegar",
+      "Hacia fuera",
+      "Punta de los dedos",
+      "Hacia abajo"
+    ],
+    "corr": 1,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Hacia fuera"
+  },
+  {
+    "q": "¿Cuánto tiempo vivió y entrenó Choi con Takeda Sokaku?",
+    "opts": [
+      "En 1959.",
+      "El Daito Ryu Aiki-Jutsu. También era famoso maestro de espada y Jiu-Jitsu.",
+      "Más de 30 años. Durante 20 años de su entrenamiento se apartó en su casa.",
+      "3808 técnicas."
+    ],
+    "corr": 2,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Más de 30 años. Durante 20 años de su entrenamiento se apartó en su casa."
+  },
+  {
+    "q": "¿Qué significa SON SU?",
+    "opts": [
+      "Amonestación",
+      "Coquilla",
+      "Punto válido",
+      "Competidor"
+    ],
+    "corr": 3,
+    "sec": "Combate",
+    "corr_txt": "Competidor"
+  },
+  {
+    "q": "¿Qué es AKUM SON TOK JIRUGUI?",
+    "opts": [
+      "Golpe con el arco interior de la mano",
+      "Pegar con el codo lateral",
+      "Pegar con la parte superior de los nudillos hacia fuera",
+      "Pegar con el canto de la mano al cuello"
+    ],
+    "corr": 0,
+    "sec": "Ataques",
+    "corr_txt": "Golpe con el arco interior de la mano"
+  },
+  {
+    "q": "¿A qué edad comenzó sus prácticas marciales y qué practicó?",
+    "opts": [
+      "El maestro Kang, fundador del Taekwondo en Venezuela (1973).",
+      "Con el maestro Carlos Flores Medina.",
+      "A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal.",
+      "En 1984."
+    ],
+    "corr": 2,
+    "sec": "Master Mendizábal",
+    "corr_txt": "A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal."
+  },
+  {
+    "q": "¿Cuándo nació Marco Tulio Vargas?",
+    "opts": [
+      "18 de julio de 1966",
+      "24 de agosto de 1960",
+      "N: 20 de julio de 1904 | M: 15 de junio de 1986",
+      "10 de enero de 1975"
+    ],
+    "corr": 0,
+    "sec": "Maestros y Fechas",
+    "corr_txt": "18 de julio de 1966"
+  },
+  {
+    "q": "¿Qué es MAE UKEMI?",
+    "opts": [
+      "Caída hacia atrás",
+      "Caída lateral",
+      "Caída con rollo hacia adelante",
+      "Caída hacia adelante"
+    ],
+    "corr": 3,
+    "sec": "Caídas",
+    "corr_txt": "Caída hacia adelante"
+  },
+  {
+    "q": "¿Qué significa NANSIM POHODE?",
+    "opts": [
+      "Gracias (en combate)",
+      "Comenzar",
+      "Coquilla",
+      "Descalificación"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Coquilla"
+  },
+  {
+    "q": "¿Qué significa MONTONG?",
+    "opts": [
+      "Punta de los dedos",
+      "Abajo",
+      "Medio",
+      "Pegar"
+    ],
+    "corr": 2,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Medio"
+  },
+  {
+    "q": "¿Cuáles fueron los dos discípulos más importantes que aparecieron en el dojo de Taegu?",
+    "opts": [
+      "Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'.",
+      "Trabajó con Takeda capturando desertores militares en las montañas. Takeda intervino para que Choi no fuera reclutado, porque si moriría se perdería el Daito Ryu Aiki-Jutsu completamente.",
+      "Ji Han Jae y In Hyuk Suh.",
+      "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."
+    ],
+    "corr": 2,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Ji Han Jae y In Hyuk Suh."
+  },
+  {
+    "q": "¿Por qué se cambió el nombre de Daito Ryu Aiki-Jutsu a Yoo Sool?",
+    "opts": [
+      "Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'.",
+      "Quedó huérfano y fue llevado a Japón.",
+      "Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio.",
+      "Se separó para reorganizar el Ku Sul Won, un arte parecido al Hapkido con más énfasis en armas y Hyong (formas)."
+    ],
+    "corr": 0,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'."
+  },
+  {
+    "q": "¿Qué es AN PALMOK MAKKI?",
+    "opts": [
+      "Defensa al centro con la zona interna del antebrazo",
+      "Defensa con el borde interno de la muñeca",
+      "Defensa con el borde externo de la muñeca",
+      "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado"
+    ],
+    "corr": 1,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa con el borde interno de la muñeca"
+  },
+  {
+    "q": "¿Qué es HOE JUM?",
+    "opts": [
+      "Peto",
+      "24 de agosto de 1960",
+      "Asalto",
+      "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo."
+    ],
+    "corr": 2,
+    "sec": "Protecciones",
+    "corr_txt": "Asalto"
+  },
+  {
+    "q": "¿Qué significa KUK KI?",
+    "opts": [
+      "Gracias",
+      "Bandera",
+      "Monitor",
+      "Enhorabuena"
+    ],
+    "corr": 1,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Bandera"
+  },
+  {
+    "q": "¿Cuál es el principio central y más importante del Hapkido?",
+    "opts": [
+      "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía.",
+      "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.",
+      "No está especificado en el material",
+      "Ninguna de las anteriores"
+    ],
+    "corr": 1,
+    "sec": "Filosofía",
+    "corr_txt": "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física."
+  },
+  {
+    "q": "¿Qué significa GURIONG E MATCHOSO?",
+    "opts": [
+      "Movimientos sin números",
+      "No / Sí",
+      "Movimientos con números",
+      "Saludo a la bandera"
+    ],
+    "corr": 2,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Movimientos con números"
+  },
+  {
+    "q": "¿Qué es JANSONNAL BITURO MAKI?",
+    "opts": [
+      "Defensa al medio con el antebrazo",
+      "Defensa lateral",
+      "Defensa con el canto de la mano",
+      "Defensa con el canto de la mano retorcida"
+    ],
+    "corr": 3,
+    "sec": "Defensas",
+    "corr_txt": "Defensa con el canto de la mano retorcida"
+  },
+  {
+    "q": "¿Qué significa CHE-YU-KWAN?",
+    "opts": [
+      "Gimnasio",
+      "Maestro",
+      "Sala de entrenamiento",
+      "Lo siento"
+    ],
+    "corr": 0,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Gimnasio"
+  },
+  {
+    "q": "¿Cuándo y dónde nació Choi Yong Sul?",
+    "opts": [
+      "En 1959.",
+      "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro.",
+      "En 1954, por sugerencia de Seo Bok Seob.",
+      "El 20 de julio de 1904 en la provincia de Chung Buk (Chong Buk), Corea del Sur."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "El 20 de julio de 1904 en la provincia de Chung Buk (Chong Buk), Corea del Sur."
+  },
+  {
+    "q": "¿Cómo comienza el estudiante a desarrollar su Ki?",
+    "opts": [
+      "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.",
+      "No está especificado en el material",
+      "Todas las anteriores",
+      "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía."
+    ],
+    "corr": 3,
+    "sec": "Filosofía",
+    "corr_txt": "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía."
+  },
+  {
+    "q": "¿Cuándo murió Choi Yong Sul y a qué edad?",
+    "opts": [
+      "El 15 de junio de 1986, a los 82 años.",
+      "Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'.",
+      "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados.",
+      "En 1948, a los 44 años."
+    ],
+    "corr": 0,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "El 15 de junio de 1986, a los 82 años."
+  },
+  {
+    "q": "¿Cuándo nació Master Mendizábal?",
+    "opts": [
+      "10 de enero de 1975",
+      "N: 12 de diciembre de 1937 | M: 14 de mayo de 2014",
+      "N: 20 de julio de 1904 | M: 15 de junio de 1986",
+      "24 de agosto de 1960"
+    ],
+    "corr": 3,
+    "sec": "Maestros y Fechas",
+    "corr_txt": "24 de agosto de 1960"
+  },
+  {
+    "q": "¿Qué es EOLGUL MAKKI?",
+    "opts": [
+      "Defensa hacia arriba",
+      "Defensa",
+      "Defensa media o al medio",
+      "Ataque con golpe de puño"
+    ],
+    "corr": 0,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa hacia arriba"
+  },
+  {
+    "q": "¿Qué significa CHON CHIN?",
+    "opts": [
+      "Llegar más lejos",
+      "Adelante, avanzar",
+      "Girar 90° (frente a frente)",
+      "Giro"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Adelante, avanzar"
+  },
+  {
+    "q": "¿Qué significa KALYO?",
+    "opts": [
+      "Separarse",
+      "Peto",
+      "Árbitro",
+      "Protector bucal"
+    ],
+    "corr": 0,
+    "sec": "Combate",
+    "corr_txt": "Separarse"
+  },
+  {
+    "q": "¿Cómo se dice 5 en coreano?",
+    "opts": [
+      "DASOT (Quinto)",
+      "DUL (Segundo)",
+      "YODUL (Octavo)",
+      "YOL (Décimo)"
+    ],
+    "corr": 0,
+    "sec": "Números Coreanos",
+    "corr_txt": "DASOT (Quinto)"
+  },
+  {
+    "q": "¿Qué es JANSONNAL MAKI?",
+    "opts": [
+      "Defensa baja con ambos brazos",
+      "Defensa con el canto de la mano",
+      "Defensa al medio con el antebrazo",
+      "Defensa al medio con manos cruzadas"
+    ],
+    "corr": 1,
+    "sec": "Defensas",
+    "corr_txt": "Defensa con el canto de la mano"
+  },
+  {
+    "q": "¿Qué significa MOK?",
+    "opts": [
+      "Antebrazo",
+      "Hacia fuera",
+      "Cuello",
+      "Codo"
+    ],
+    "corr": 2,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Cuello"
+  },
+  {
+    "q": "¿Por qué es conocido en el Ministerio?",
+    "opts": [
+      "De la 'IUNEP' (Ministerio de Interior y Justicia).",
+      "Hapkido y Taekwondo.",
+      "Por su labor al frente de la ONG en deporte penitenciario en Venezuela.",
+      "En numerosas oportunidades en formas."
+    ],
+    "corr": 2,
+    "sec": "Master Marco Tulio Vargas",
+    "corr_txt": "Por su labor al frente de la ONG en deporte penitenciario en Venezuela."
+  },
+  {
+    "q": "¿Qué significa CHIGUI?",
+    "opts": [
+      "Parte superior de los nudillos",
+      "Lateral",
+      "Antebrazo",
+      "Pegar"
+    ],
+    "corr": 3,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Pegar"
+  },
+  {
+    "q": "¿Cuándo y cómo nació la Asociación Venezolana de Hapkido 'Choi Yong Sul'?",
+    "opts": [
+      "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.",
+      "En 1993.",
+      "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país.",
+      "Master José Luis Mendizábal, Master Eulalio Vielma, Master Wilfredo Guette, Master Marco Tulio Vargas, Master Eliverio Vargas, Sabonim Fanny Rodríguez."
+    ],
+    "corr": 2,
+    "sec": "Asociación Venezolana",
+    "corr_txt": "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país."
+  },
+  {
+    "q": "¿Qué es SONNAL BAKAT CHIGUI?",
+    "opts": [
+      "Pegar con el canto exterior de la mano",
+      "Golpe al medio",
+      "Pegar con el codo lateral",
+      "Golpe lateral"
+    ],
+    "corr": 0,
+    "sec": "Ataques",
+    "corr_txt": "Pegar con el canto exterior de la mano"
+  },
+  {
+    "q": "¿Cuál es la importancia del Hapkido para el practicante?",
+    "opts": [
+      "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.",
+      "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía",
+      "No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías.",
+      "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física."
+    ],
+    "corr": 3,
+    "sec": "Definición y Principios",
+    "corr_txt": "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física."
+  },
+  {
+    "q": "¿Cuándo nació José Cartaya?",
+    "opts": [
+      "10 de enero de 1975",
+      "18 de julio de 1966",
+      "N: 4 de noviembre de 1859 | M: 25 de abril de 1943",
+      "24 de agosto de 1960"
+    ],
+    "corr": 0,
+    "sec": "Maestros y Fechas",
+    "corr_txt": "10 de enero de 1975"
+  },
+  {
+    "q": "¿En qué año se decidió cambiar el nombre al actual 'Hapkido'?",
+    "opts": [
+      "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.",
+      "En 1959.",
+      "En 1948, a los 44 años.",
+      "El 25 de abril de 1943."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "En 1959."
+  },
+  {
+    "q": "¿Qué significa PALKUP?",
+    "opts": [
+      "Cuello",
+      "Abajo",
+      "Arriba",
+      "Codo"
+    ],
+    "corr": 3,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Codo"
+  },
+  {
+    "q": "¿Qué pasó hace trece siglos en Corea?",
+    "opts": [
+      "El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas.",
+      "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones.",
+      "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.",
+      "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea."
+    ],
+    "corr": 1,
+    "sec": "Historia del Hapkido",
+    "corr_txt": "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones."
+  },
+  {
+    "q": "¿Qué es TUIT CHAGUI?",
+    "opts": [
+      "Patada enganchando",
+      "Patada lateral",
+      "Círculo de pierna exterior",
+      "Patada hacia atrás"
+    ],
+    "corr": 3,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada hacia atrás"
+  },
+  {
+    "q": "¿Qué es el Hapkido?",
+    "opts": [
+      "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía",
+      "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física.",
+      "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.",
+      "Es un arte marcial coreano enfocado hacia la defensa personal militar y civil. Es un arte muy integrado que consiste en técnicas extensas de bloqueo articular, técnicas de patadas dinámicas, patadas simples, golpes similares al Taekwondo tradicional, y técnicas de bloqueo duras y blandas. Es una compilación de dos artes marciales coreanos diferentes: El Yoo Sool (que proviene del Daito Ryu Aiki Jutsu creado por Takeda Sogaku, maestro de Choi Yong Sul) y el famoso arte de las patadas coreanas Taek-Kyon."
+    ],
+    "corr": 3,
+    "sec": "Definición y Principios",
+    "corr_txt": "Es un arte marcial coreano enfocado hacia la defensa personal militar y civil. Es un arte muy integrado que consiste en técnicas extensas de bloqueo articular, técnicas de patadas dinámicas, patadas simples, golpes similares al Taekwondo tradicional, y técnicas de bloqueo duras y blandas. Es una compilación de dos artes marciales coreanos diferentes: El Yoo Sool (que proviene del Daito Ryu Aiki Jutsu creado por Takeda Sogaku, maestro de Choi Yong Sul) y el famoso arte de las patadas coreanas Taek-Kyon."
+  },
+  {
+    "q": "¿Cómo se explica en términos sencillos?",
+    "opts": [
+      "Gimnasio",
+      "En todo lo bueno hay algo de malo y en todo lo malo hay algo bueno.",
+      "El maestro Kang, fundador del Taekwondo en Venezuela (1973).",
+      "El 15 de junio de 1986, a los 82 años."
+    ],
+    "corr": 1,
+    "sec": "Ying Yang",
+    "corr_txt": "En todo lo bueno hay algo de malo y en todo lo malo hay algo bueno."
+  },
+  {
+    "q": "¿Qué significa NO / NE?",
+    "opts": [
+      "Sala de entrenamiento",
+      "Decano de Maestros",
+      "Hola",
+      "No / Sí"
+    ],
+    "corr": 3,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "No / Sí"
+  },
+  {
+    "q": "¿Qué significa WOO-SE-KIROK?",
+    "opts": [
+      "Peto",
+      "Amonestación",
+      "Rellenar tarjeta de superioridad",
+      "Juez"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Rellenar tarjeta de superioridad"
+  },
+  {
+    "q": "¿Qué representa el Ying Yang?",
+    "opts": [
+      "18 de julio de 1966",
+      "El equilibrio de fuerzas.",
+      "Caída con rollo hacia adelante",
+      "Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio."
+    ],
+    "corr": 1,
+    "sec": "Ying Yang",
+    "corr_txt": "El equilibrio de fuerzas."
+  },
+  {
+    "q": "¿Dónde fue enterrado Choi Yong Sul?",
+    "opts": [
+      "Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años.",
+      "En la Montaña de Su, en el área de Hokkaido.",
+      "En 1948, a los 44 años.",
+      "En Taegu."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "En Taegu."
+  },
+  {
+    "q": "¿Estuvo Choi personalmente involucrado enseñando a la familia real japonesa?",
+    "opts": [
+      "Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio.",
+      "Casi 28 años.",
+      "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas.",
+      "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados."
+    ],
+    "corr": 0,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio."
+  },
+  {
+    "q": "¿Qué significa SONNAL DUNG?",
+    "opts": [
+      "Arriba",
+      "Canto interior de la mano (dorso)",
+      "Canto exterior de la mano",
+      "Golpear"
+    ],
+    "corr": 1,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Canto interior de la mano (dorso)"
+  },
+  {
+    "q": "¿Qué significa OLGUL?",
+    "opts": [
+      "Puño",
+      "Parte superior de los nudillos",
+      "Arriba",
+      "Hacia fuera"
+    ],
+    "corr": 2,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Arriba"
+  },
+  {
+    "q": "¿Quién adoptó a Choi Yong Sul en Japón y qué nombre le dio?",
+    "opts": [
+      "En Taegu.",
+      "La 'Korea Kido Association', donde Choi Yong Sul era el presidente.",
+      "Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas.",
+      "Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida."
+  },
+  {
+    "q": "¿Qué significa MI AN JAM NI DA?",
+    "opts": [
+      "Gracias",
+      "Enhorabuena",
+      "Lo siento",
+      "Monitor"
+    ],
+    "corr": 2,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Lo siento"
+  },
+  {
+    "q": "¿Cuándo y por quién fue fundada la Federación Internacional de Hapkido?",
+    "opts": [
+      "Caída lateral",
+      "Defensa al centro con la zona interna del antebrazo",
+      "10 de enero de 1975",
+      "En 1974 por el gran maestro Myung Kwan Sik (alumno directo de Choi Yong Sul)."
+    ],
+    "corr": 3,
+    "sec": "Federación Internacional",
+    "corr_txt": "En 1974 por el gran maestro Myung Kwan Sik (alumno directo de Choi Yong Sul)."
+  },
+  {
+    "q": "¿Qué significa TUE CHANG?",
+    "opts": [
+      "Juez",
+      "Descalificación",
+      "Punto válido",
+      "Combate"
+    ],
+    "corr": 1,
+    "sec": "Combate",
+    "corr_txt": "Descalificación"
+  },
+  {
+    "q": "¿Qué significa CHIKKI?",
+    "opts": [
+      "Defensa abajo",
+      "Golpe o Ataque",
+      "Ataque con golpe de puño",
+      "Defensa"
+    ],
+    "corr": 1,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Golpe o Ataque"
+  },
+  {
+    "q": "¿Qué pasó después de que el instructor los abandonara?",
+    "opts": [
+      "Porque las artes marciales en el país eran bastante cerradas.",
+      "El maestro Kang, fundador del Taekwondo en Venezuela (1973).",
+      "Cada quien tomó su propio camino, y el Master Mendizábal y otros decidieron formar la AVH.",
+      "El Master German Alpire de la Nam Moo Kwan Hapkido Association se encargó de nivelar en Hapkido a la organización 'Gae Beek', de la cual Mendizábal formaba parte."
+    ],
+    "corr": 2,
+    "sec": "Master Mendizábal",
+    "corr_txt": "Cada quien tomó su propio camino, y el Master Mendizábal y otros decidieron formar la AVH."
+  },
+  {
+    "q": "¿Qué es MONTONG JIRUGUI?",
+    "opts": [
+      "Pegar con el codo circular",
+      "Golpe al medio",
+      "Golpe con la mano hacia abajo (punta de dedos)",
+      "Golpe arriba"
+    ],
+    "corr": 1,
+    "sec": "Ataques",
+    "corr_txt": "Golpe al medio"
+  },
+  {
+    "q": "¿Qué ocurrió en 1988 con Mendizábal?",
+    "opts": [
+      "Porque las artes marciales en el país eran bastante cerradas.",
+      "A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal.",
+      "El maestro Kang, fundador del Taekwondo en Venezuela (1973).",
+      "El Master German Alpire de la Nam Moo Kwan Hapkido Association se encargó de nivelar en Hapkido a la organización 'Gae Beek', de la cual Mendizábal formaba parte."
+    ],
+    "corr": 3,
+    "sec": "Master Mendizábal",
+    "corr_txt": "El Master German Alpire de la Nam Moo Kwan Hapkido Association se encargó de nivelar en Hapkido a la organización 'Gae Beek', de la cual Mendizábal formaba parte."
+  },
+  {
+    "q": "¿Qué es AN DARI FURIGUI?",
+    "opts": [
+      "Círculo de pierna exterior",
+      "Patada circular",
+      "Patada semicircular baja",
+      "Círculo de pierna interior"
+    ],
+    "corr": 3,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Círculo de pierna interior"
+  },
+  {
+    "q": "¿Qué significa KUK KI E DE JA YO?",
+    "opts": [
+      "Enhorabuena",
+      "Saludo al maestro",
+      "Saludo a la bandera",
+      "Traje de taekwondo"
+    ],
+    "corr": 2,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Saludo a la bandera"
+  },
+  {
+    "q": "¿Dónde estaban localizadas la casa y escuela de Takeda Sokaku?",
+    "opts": [
+      "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas.",
+      "Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida.",
+      "Ji Han Jae y In Hyuk Suh.",
+      "En la Montaña de Su, en el área de Hokkaido."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "En la Montaña de Su, en el área de Hokkaido."
+  },
+  {
+    "q": "¿Qué alumnos destacaban en la academia de 1953?",
+    "opts": [
+      "Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas.",
+      "La 'Korea Kido Association', donde Choi Yong Sul era el presidente.",
+      "Quedó huérfano y fue llevado a Japón.",
+      "Ji Han Jae y Myung Kwang Sik."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Ji Han Jae y Myung Kwang Sik."
+  },
+  {
+    "q": "¿Qué significa SONNAL?",
+    "opts": [
+      "Lateral",
+      "Hacia fuera",
+      "Golpear",
+      "Canto exterior de la mano"
+    ],
+    "corr": 3,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Canto exterior de la mano"
+  },
+  {
+    "q": "¿Qué significa CHUMBI?",
+    "opts": [
+      "Amonestación",
+      "Coquilla",
+      "Competidor",
+      "Preparados"
+    ],
+    "corr": 3,
+    "sec": "Combate",
+    "corr_txt": "Preparados"
+  },
+  {
+    "q": "¿Cuál es el objetivo del Hapkido frente a un oponente?",
+    "opts": [
+      "No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías.",
+      "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.",
+      "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía",
+      "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física."
+    ],
+    "corr": 0,
+    "sec": "Definición y Principios",
+    "corr_txt": "No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías."
+  },
+  {
+    "q": "¿Qué significa SIGAN?",
+    "opts": [
+      "Vencedor Azul / Vencedor Rojo",
+      "Separarse",
+      "Tiempo",
+      "Reglas de competición"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Tiempo"
+  },
+  {
+    "q": "¿Qué referencia tiene el Ying Yang en el Hapkido?",
+    "opts": [
+      "A las energías que hay que dominar para poder pasar del impulso de furia a la calma en segundos al momento de realizar y culminar una técnica o en combate.",
+      "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado",
+      "Lateral",
+      "JANA (Primero)"
+    ],
+    "corr": 0,
+    "sec": "Ying Yang",
+    "corr_txt": "A las energías que hay que dominar para poder pasar del impulso de furia a la calma en segundos al momento de realizar y culminar una técnica o en combate."
+  },
+  {
+    "q": "¿Cuándo murió Takeda Sokaku?",
+    "opts": [
+      "Sí, era el ayudante de su maestro en todas sus instrucciones. Enseñaron también a oficiales gubernamentales y alta jerarquía dentro del palacio.",
+      "Poco después de la muerte de Takeda, en Taegu, provincia de Kyung Buk.",
+      "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.",
+      "El 25 de abril de 1943."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "El 25 de abril de 1943."
+  },
+  {
+    "q": "¿Qué es YOP JIRUGUI?",
+    "opts": [
+      "Golpe con el arco interior de la mano",
+      "Golpe con la palma de la mano",
+      "Pegar con el canto de la mano al cuello",
+      "Golpe lateral"
+    ],
+    "corr": 3,
+    "sec": "Ataques",
+    "corr_txt": "Golpe lateral"
+  },
+  {
+    "q": "¿Qué es SONNAL MOK CHIGUI?",
+    "opts": [
+      "Golpe arriba",
+      "Golpe al medio",
+      "Pegar con el canto de la mano al cuello",
+      "Golpe lateral"
+    ],
+    "corr": 2,
+    "sec": "Ataques",
+    "corr_txt": "Pegar con el canto de la mano al cuello"
+  },
+  {
+    "q": "¿Por qué Choi Yong Sul tuvo que cambiar su nombre y aprender costumbres japonesas?",
+    "opts": [
+      "1953.",
+      "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano.",
+      "Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años.",
+      "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano."
+  },
+  {
+    "q": "¿Cuántas técnicas desarrolló y dominó Takeda Sokaku en su sistema?",
+    "opts": [
+      "3808 técnicas.",
+      "1953.",
+      "En 1948, a los 44 años.",
+      "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas."
+    ],
+    "corr": 0,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "3808 técnicas."
+  },
+  {
+    "q": "¿Cómo conoció Choi a Takeda Sokaku?",
+    "opts": [
+      "Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo.",
+      "Choi no le gustó y debido a su protesta constante, Morimoto lo abandonó en el pueblo de Moji en Japón.",
+      "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.",
+      "Kintaro Wadanabi era amigo íntimo de Takeda Sokaku y lo presentó ante él. Choi señaló una escena de artes marciales en un mural del templo diciendo que eso quería ser."
+    ],
+    "corr": 3,
+    "sec": "Entrevista a Choi Yong Sul",
+    "corr_txt": "Kintaro Wadanabi era amigo íntimo de Takeda Sokaku y lo presentó ante él. Choi señaló una escena de artes marciales en un mural del templo diciendo que eso quería ser."
+  },
+  {
+    "q": "¿Qué significa SI YO?",
+    "opts": [
+      "Cuartel general",
+      "Decano de Maestros",
+      "Cinturón",
+      "Adiós"
+    ],
+    "corr": 3,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Adiós"
+  },
+  {
+    "q": "¿Qué significa CHU KA JAM NI DA?",
+    "opts": [
+      "Enhorabuena",
+      "Traje de taekwondo",
+      "Adiós",
+      "Cinturón"
+    ],
+    "corr": 0,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Enhorabuena"
+  },
+  {
+    "q": "¿Qué significa KAMCHONG?",
+    "opts": [
+      "Protector bucal",
+      "Rojo / Azul",
+      "Reglas de competición",
+      "Amonestación"
+    ],
+    "corr": 3,
+    "sec": "Combate",
+    "corr_txt": "Amonestación"
+  },
+  {
+    "q": "Nombra 8 luxaciones vistas en el material:",
+    "opts": [
+      "Inmovilizaciones en el suelo",
+      "Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas",
+      "Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano",
+      "Luxaciones"
+    ],
+    "corr": 2,
+    "sec": "Inmovilizaciones",
+    "corr_txt": "Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano"
+  },
+  {
+    "q": "¿Qué es OPUN SON KUT?",
+    "opts": [
+      "Golpe lateral",
+      "Pegar con el codo circular",
+      "Golpe arriba",
+      "Golpe con la mano hacia abajo (punta de dedos)"
+    ],
+    "corr": 3,
+    "sec": "Ataques",
+    "corr_txt": "Golpe con la mano hacia abajo (punta de dedos)"
+  },
+  {
+    "q": "¿Cómo se dice 2 en coreano?",
+    "opts": [
+      "DUL (Segundo)",
+      "NET (Cuarto)",
+      "YOL (Décimo)",
+      "YOSOP (Sexto)"
+    ],
+    "corr": 0,
+    "sec": "Números Coreanos",
+    "corr_txt": "DUL (Segundo)"
+  },
+  {
+    "q": "¿Cuál es el objetivo de la Federación Internacional?",
+    "opts": [
+      "Promover la práctica de las artes marciales coreanas del Hapkido en el mundo.",
+      "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.",
+      "Primero Yu Kwon Sool, luego Hapki-Yu-Sul (Aiki-Ju-Jitsu, escuela Yawara Ryu), y finalmente Hapkido.",
+      "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía."
+    ],
+    "corr": 0,
+    "sec": "Federación Internacional",
+    "corr_txt": "Promover la práctica de las artes marciales coreanas del Hapkido en el mundo."
+  },
+  {
+    "q": "¿Qué significa KYORUGUI?",
+    "opts": [
+      "Combate",
+      "Zona de competición",
+      "Punto válido",
+      "Competidor"
+    ],
+    "corr": 0,
+    "sec": "Combate",
+    "corr_txt": "Combate"
+  },
+  {
+    "q": "¿Qué significa GONG KIOK?",
+    "opts": [
+      "Manos se cruzan al salir",
+      "Ataque",
+      "Una mano ayuda a la otra",
+      "Atrás, retroceder"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Ataque"
+  },
+  {
+    "q": "Nombra 15 proyecciones básicas vistas en el material:",
+    "opts": [
+      "Gran siega exterior, Gran siega interior, Pequeño gancho exterior, Proyección con la cadera (agarre al cuello), Proyección por el hombro dos manos, Caída flotante, Proyectar sujetando con el talón, Barrido al pie adelantado, Pequeña siega exterior, Barrido al interior del muslo, Barrido con la cadera, Vuelco por el hombro, Barrido con las dos manos, Proyección en círculo, Rueda por la rodilla",
+      "Golpe al medio",
+      "YOL (Décimo)",
+      "Ji Han Jae y In Hyuk Suh."
+    ],
+    "corr": 0,
+    "sec": "Proyecciones",
+    "corr_txt": "Gran siega exterior, Gran siega interior, Pequeño gancho exterior, Proyección con la cadera (agarre al cuello), Proyección por el hombro dos manos, Caída flotante, Proyectar sujetando con el talón, Barrido al pie adelantado, Pequeña siega exterior, Barrido al interior del muslo, Barrido con la cadera, Vuelco por el hombro, Barrido con las dos manos, Proyección en círculo, Rueda por la rodilla"
+  },
+  {
+    "q": "¿Qué significa MONDOLLYO?",
+    "opts": [
+      "Salto",
+      "Giro",
+      "Media vuelta",
+      "Patada"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Giro"
+  },
+  {
+    "q": "¿Qué significa KWAN-CHANG-NIM?",
+    "opts": [
+      "Decano de Maestros",
+      "Hola",
+      "Maestro",
+      "Lo siento"
+    ],
+    "corr": 0,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Decano de Maestros"
+  },
+  {
+    "q": "¿Qué significa BITURO?",
+    "opts": [
+      "Atrás, retroceder",
+      "Defensa",
+      "Retorcerse",
+      "Manos se cruzan al salir"
+    ],
+    "corr": 2,
+    "sec": "Acciones",
+    "corr_txt": "Retorcerse"
+  },
+  {
+    "q": "¿Qué significa BATANGSON?",
+    "opts": [
+      "Palma de la mano",
+      "Mano hacia abajo",
+      "Cuello",
+      "Hacia fuera"
+    ],
+    "corr": 0,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Palma de la mano"
+  },
+  {
+    "q": "¿Qué significa GUMAN?",
+    "opts": [
+      "Competidor",
+      "Gracias (en combate)",
+      "Final",
+      "Reglas de competición"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Final"
+  },
+  {
+    "q": "¿Qué significa DOBOM?",
+    "opts": [
+      "Arriba",
+      "Hacia adentro",
+      "Ejecutar dos acciones consecutivas",
+      "Defensa al medio con el antebrazo"
+    ],
+    "corr": 2,
+    "sec": "Acciones",
+    "corr_txt": "Ejecutar dos acciones consecutivas"
+  },
+  {
+    "q": "¿Qué arte marcial surgió durante la dinastía Silla y quiénes lo practicaban?",
+    "opts": [
+      "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones.",
+      "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.",
+      "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea.",
+      "El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas."
+    ],
+    "corr": 1,
+    "sec": "Historia del Hapkido",
+    "corr_txt": "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años."
+  },
+  {
+    "q": "¿Cómo se dice 6 en coreano?",
+    "opts": [
+      "AJOP (Noveno)",
+      "YODUL (Octavo)",
+      "YOSOP (Sexto)",
+      "ILGOP (Séptimo)"
+    ],
+    "corr": 2,
+    "sec": "Números Coreanos",
+    "corr_txt": "YOSOP (Sexto)"
+  },
+  {
+    "q": "¿Qué significa CHIRGUI?",
+    "opts": [
+      "Salto",
+      "Mano hacia arriba / Mano hacia abajo",
+      "Pinchar",
+      "Posición"
+    ],
+    "corr": 2,
+    "sec": "Acciones",
+    "corr_txt": "Pinchar"
+  },
+  {
+    "q": "¿En qué tres principios básicos se basa el Hapkido?",
+    "opts": [
+      "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física.",
+      "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.",
+      "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía",
+      "No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías."
+    ],
+    "corr": 2,
+    "sec": "Definición y Principios",
+    "corr_txt": "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía"
+  },
+  {
+    "q": "¿En qué año Choi abrió su propia academia en su casa?",
+    "opts": [
+      "El 15 de junio de 1986, a los 82 años.",
+      "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro.",
+      "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano.",
+      "1953."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "1953."
+  },
+  {
+    "q": "¿Qué es BAT ANGSON NULO MAKI?",
+    "opts": [
+      "Defensa con el canto de la mano retorcida",
+      "Defensa baja con ambos brazos",
+      "Defensa lateral",
+      "Defensa lateral con el borde externo del antebrazo"
+    ],
+    "corr": 1,
+    "sec": "Defensas",
+    "corr_txt": "Defensa baja con ambos brazos"
+  },
+  {
+    "q": "¿Qué es PALKUP YOP CHIGUI?",
+    "opts": [
+      "Golpe con la palma de la mano",
+      "Pegar con el codo lateral",
+      "Golpe con la mano hacia abajo (punta de dedos)",
+      "Golpe arriba"
+    ],
+    "corr": 1,
+    "sec": "Ataques",
+    "corr_txt": "Pegar con el codo lateral"
+  },
+  {
+    "q": "¿Qué significa AP?",
+    "opts": [
+      "Derecha",
+      "Al frente",
+      "Al lado",
+      "Atrás"
+    ],
+    "corr": 1,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Al frente"
+  },
+  {
+    "q": "¿Qué significa I PAL POHODE?",
+    "opts": [
+      "Vencedor Azul / Vencedor Rojo",
+      "Continuar",
+      "Comenzar",
+      "Protector bucal"
+    ],
+    "corr": 3,
+    "sec": "Combate",
+    "corr_txt": "Protector bucal"
+  },
+  {
+    "q": "¿Cuáles son las fechas de Takeda Sogaku?",
+    "opts": [
+      "N: 20 de julio de 1904 | M: 15 de junio de 1986",
+      "N: 4 de noviembre de 1859 | M: 25 de abril de 1943",
+      "N: 12 de diciembre de 1937 | M: 14 de mayo de 2014",
+      "24 de agosto de 1960"
+    ],
+    "corr": 1,
+    "sec": "Maestros y Fechas",
+    "corr_txt": "N: 4 de noviembre de 1859 | M: 25 de abril de 1943"
+  },
+  {
+    "q": "¿Qué significa CHEBIPOM?",
+    "opts": [
+      "Pinchar",
+      "Salto",
+      "Girar 90° (frente a frente)",
+      "Llegar más lejos"
+    ],
+    "corr": 3,
+    "sec": "Acciones",
+    "corr_txt": "Llegar más lejos"
+  },
+  {
+    "q": "¿Qué significa literalmente la palabra Hap-Ki-Do?",
+    "opts": [
+      "Que el practicante alcanza a unir la mente y el cuerpo dentro de una unidad espiritual física.",
+      "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'.",
+      "No es enfrentar al oponente con nuestra propia fuerza, sino redirigirlo entrando en su guardia como el agua, para luego contratacar con técnicas circulares, siempre manteniendo una armonía entre las energías.",
+      "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía"
+    ],
+    "corr": 1,
+    "sec": "Definición y Principios",
+    "corr_txt": "Coordinación, poder y camino. Hap = coordinación, Ki = esencia del poder, Do = arte o camino. También se interpreta como 'El camino de la unión con la energía universal'."
+  },
+  {
+    "q": "¿Qué significa YOP?",
+    "opts": [
+      "Antebrazo",
+      "Lateral",
+      "Cuello",
+      "Circular"
+    ],
+    "corr": 1,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Lateral"
+  },
+  {
+    "q": "¿Qué significa CHIGUI?",
+    "opts": [
+      "Girar 90° (frente a frente)",
+      "Pegar",
+      "Patada",
+      "Golpear"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Pegar"
+  },
+  {
+    "q": "¿Qué significa FU CHIN?",
+    "opts": [
+      "Manos en cruz",
+      "Golpear",
+      "Salto",
+      "Atrás, retroceder"
+    ],
+    "corr": 3,
+    "sec": "Acciones",
+    "corr_txt": "Atrás, retroceder"
+  },
+  {
+    "q": "¿Qué significa CHIRIGUI?",
+    "opts": [
+      "Golpe o Ataque",
+      "Ataque con golpe de puño",
+      "Defensa",
+      "Defensa hacia arriba"
+    ],
+    "corr": 1,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Ataque con golpe de puño"
+  },
+  {
+    "q": "¿Qué es PALKUP DOLLIO CHIGUI?",
+    "opts": [
+      "Pegar con la parte superior de los nudillos hacia fuera",
+      "Golpe lateral",
+      "Golpe con la mano hacia abajo (punta de dedos)",
+      "Pegar con el codo circular"
+    ],
+    "corr": 3,
+    "sec": "Ataques",
+    "corr_txt": "Pegar con el codo circular"
+  },
+  {
+    "q": "¿Qué significa HONG / CHONG?",
+    "opts": [
+      "Coquilla",
+      "Final",
+      "Rojo / Azul",
+      "Punto válido"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Rojo / Azul"
+  },
+  {
+    "q": "¿Qué significa YU SHIM?",
+    "opts": [
+      "Amonestación",
+      "Árbitro",
+      "Juez",
+      "Final"
+    ],
+    "corr": 1,
+    "sec": "Combate",
+    "corr_txt": "Árbitro"
+  },
+  {
+    "q": "¿Cómo se dice 10 en coreano?",
+    "opts": [
+      "YOL (Décimo)",
+      "YODUL (Octavo)",
+      "AJOP (Noveno)",
+      "NET (Cuarto)"
+    ],
+    "corr": 0,
+    "sec": "Números Coreanos",
+    "corr_txt": "YOL (Décimo)"
+  },
+  {
+    "q": "¿Qué arte marcial enseñaba Takeda Sokaku?",
+    "opts": [
+      "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan.",
+      "El Daito Ryu Aiki-Jutsu. También era famoso maestro de espada y Jiu-Jitsu.",
+      "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo.",
+      "El 25 de abril de 1943."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "El Daito Ryu Aiki-Jutsu. También era famoso maestro de espada y Jiu-Jitsu."
+  },
+  {
+    "q": "¿Qué otras proyecciones aparecen en el material?",
+    "opts": [
+      "Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo.",
+      "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano.",
+      "En 1959.",
+      "Pequeña siega interior, Proyección con la cadera (agarre a la espalda), Proyección por el hombro una mano, Rueda por los hombros, Proyectar cogiendo la pierna, Proyección flotante"
+    ],
+    "corr": 3,
+    "sec": "Proyecciones",
+    "corr_txt": "Pequeña siega interior, Proyección con la cadera (agarre a la espalda), Proyección por el hombro una mano, Rueda por los hombros, Proyectar cogiendo la pierna, Proyección flotante"
+  },
+  {
+    "q": "¿Qué significa BU SHIM?",
+    "opts": [
+      "Tiempo médico (1 minuto)",
+      "Gracias (en combate)",
+      "Juez",
+      "Preparados"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Juez"
+  },
+  {
+    "q": "¿Qué significa DEUK JUM?",
+    "opts": [
+      "Descalificación",
+      "Combate",
+      "Punto válido",
+      "Amonestación"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Punto válido"
+  },
+  {
+    "q": "¿Qué es OKGORO MONTONG MAKI?",
+    "opts": [
+      "Defensa al medio con manos cruzadas",
+      "Defensa lateral",
+      "Defensa con el canto de la mano",
+      "Defensa con el canto de la mano retorcida"
+    ],
+    "corr": 0,
+    "sec": "Defensas",
+    "corr_txt": "Defensa al medio con manos cruzadas"
+  },
+  {
+    "q": "¿Cómo se dice 8 en coreano?",
+    "opts": [
+      "AJOP (Noveno)",
+      "YODUL (Octavo)",
+      "NET (Cuarto)",
+      "YOL (Décimo)"
+    ],
+    "corr": 1,
+    "sec": "Números Coreanos",
+    "corr_txt": "YODUL (Octavo)"
+  },
+  {
+    "q": "¿Qué es BAT ANGSON MONTONG MAKI?",
+    "opts": [
+      "Defensa al medio con el dorso de la mano",
+      "Defensa con el canto de la mano",
+      "Defensa al medio con ambos antebrazos",
+      "Defensa al medio con el antebrazo"
+    ],
+    "corr": 2,
+    "sec": "Defensas",
+    "corr_txt": "Defensa al medio con ambos antebrazos"
+  },
+  {
+    "q": "¿Qué es DOBOM CHUMOK CHIRIGUI?",
+    "opts": [
+      "24 de agosto de 1960",
+      "Yoo: Fluye como el agua; Won: Teoría del círculo; Hwa: No resistencia o armonía",
+      "Doble puño / Puños consecutivos",
+      "El maestro Kang, fundador del Taekwondo en Venezuela (1973)."
+    ],
+    "corr": 2,
+    "sec": "Acciones",
+    "corr_txt": "Doble puño / Puños consecutivos"
+  },
+  {
+    "q": "¿Qué es FURIO CHAGUI?",
+    "opts": [
+      "Patada enganchando",
+      "Patada semicircular baja",
+      "Patada enganchando con pierna recta",
+      "Círculo de pierna interior"
+    ],
+    "corr": 2,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada enganchando con pierna recta"
+  },
+  {
+    "q": "¿En qué arte es instructor Marco Tulio Vargas?",
+    "opts": [
+      "Instructor de la escuela de custodias del Ministerio de Interior y Justicia.",
+      "En numerosas oportunidades en formas.",
+      "Hapkido y Taekwondo.",
+      "De la 'IUNEP' (Ministerio de Interior y Justicia)."
+    ],
+    "corr": 2,
+    "sec": "Master Marco Tulio Vargas",
+    "corr_txt": "Hapkido y Taekwondo."
+  },
+  {
+    "q": "¿Qué es KOKKI SHU?",
+    "opts": [
+      "Luxaciones",
+      "Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano",
+      "Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas",
+      "Inmovilizaciones en el suelo"
+    ],
+    "corr": 0,
+    "sec": "Inmovilizaciones",
+    "corr_txt": "Luxaciones"
+  },
+  {
+    "q": "¿Qué significa GAM SA JAM NI DA?",
+    "opts": [
+      "Gracias",
+      "Decano de Maestros",
+      "Corea",
+      "Saludo al maestro"
+    ],
+    "corr": 0,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Gracias"
+  },
+  {
+    "q": "¿Qué emblema se creó en 1959 y qué representa?",
+    "opts": [
+      "Más de 30 años. Durante 20 años de su entrenamiento se apartó en su casa.",
+      "1953.",
+      "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.",
+      "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas."
+  },
+  {
+    "q": "¿Qué significa MONDORA?",
+    "opts": [
+      "Giro del cuerpo",
+      "Al lado",
+      "Colocar frente a frente",
+      "Al frente"
+    ],
+    "corr": 0,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Giro del cuerpo"
+  },
+  {
+    "q": "¿Qué es ZEMPO KAITEN UKEMI?",
+    "opts": [
+      "Caída lateral",
+      "Caída con rollo hacia adelante",
+      "Caída hacia adelante",
+      "Caída hacia atrás"
+    ],
+    "corr": 1,
+    "sec": "Caídas",
+    "corr_txt": "Caída con rollo hacia adelante"
+  },
+  {
+    "q": "¿Qué significa PIJAGUI?",
+    "opts": [
+      "Golpear",
+      "Salto",
+      "Esquivar",
+      "Una mano ayuda a la otra"
+    ],
+    "corr": 2,
+    "sec": "Acciones",
+    "corr_txt": "Esquivar"
+  },
+  {
+    "q": "¿Qué significa YOP?",
+    "opts": [
+      "Giro del cuerpo",
+      "Hacia fuera",
+      "Al lado",
+      "Derecha"
+    ],
+    "corr": 2,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Al lado"
+  },
+  {
+    "q": "¿Cómo se dice 4 en coreano?",
+    "opts": [
+      "YODUL (Octavo)",
+      "NET (Cuarto)",
+      "ILGOP (Séptimo)",
+      "AJOP (Noveno)"
+    ],
+    "corr": 1,
+    "sec": "Números Coreanos",
+    "corr_txt": "NET (Cuarto)"
+  },
+  {
+    "q": "¿Con quién entrenó Taekwondo?",
+    "opts": [
+      "A los 12 años, entrenó Kung Fu con un bodeguero chino que vino a Venezuela. Era una instrucción informal.",
+      "El Master German Alpire de la Nam Moo Kwan Hapkido Association se encargó de nivelar en Hapkido a la organización 'Gae Beek', de la cual Mendizábal formaba parte.",
+      "Porque las artes marciales en el país eran bastante cerradas.",
+      "Con el maestro Carlos Flores Medina."
+    ],
+    "corr": 3,
+    "sec": "Master Mendizábal",
+    "corr_txt": "Con el maestro Carlos Flores Medina."
+  },
+  {
+    "q": "¿Qué le pasó a Choi Yong Sul a los 6 años?",
+    "opts": [
+      "El 25 de abril de 1943.",
+      "Quedó huérfano y fue llevado a Japón.",
+      "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro.",
+      "Debido a la ocupación japonesa de Corea. Tuvo que usar un nombre japonés y le fue prohibido hablar coreano y comportarse como coreano."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Quedó huérfano y fue llevado a Japón."
+  },
+  {
+    "q": "¿Qué significa CHUNGENG POHODE?",
+    "opts": [
+      "Espinillera",
+      "Preparados",
+      "Descalificación",
+      "Separarse"
+    ],
+    "corr": 0,
+    "sec": "Combate",
+    "corr_txt": "Espinillera"
+  },
+  {
+    "q": "¿Qué significa DOLLIO?",
+    "opts": [
+      "Puño",
+      "Golpear",
+      "Antebrazo",
+      "Circular"
+    ],
+    "corr": 3,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Circular"
+  },
+  {
+    "q": "¿Cuáles son los 4 valores esenciales que debe tener un hapkidoka?",
+    "opts": [
+      "Todas las anteriores",
+      "Humildad: Virtud humana de reconocer nuestras propias capacidades y limitaciones. Ausencia de soberbia. Integridad: Cualidad de una persona para tomar decisiones buenas así nadie lo esté observando. Honestidad: Ser honesto o siempre hablar con la verdad en cualquier situación de la vida. Honrar a padres y maestro: Respetar y admirar a ambos por quienes somos hoy en día y lo que sabemos.",
+      "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.",
+      "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía."
+    ],
+    "corr": 1,
+    "sec": "Filosofía",
+    "corr_txt": "Humildad: Virtud humana de reconocer nuestras propias capacidades y limitaciones. Ausencia de soberbia. Integridad: Cualidad de una persona para tomar decisiones buenas así nadie lo esté observando. Honestidad: Ser honesto o siempre hablar con la verdad en cualquier situación de la vida. Honrar a padres y maestro: Respetar y admirar a ambos por quienes somos hoy en día y lo que sabemos."
+  },
+  {
+    "q": "¿Qué nombre le puso Choi a su arte al volver a Corea?",
+    "opts": [
+      "Primero Yu Kwon Sool, luego Hapki-Yu-Sul (Aiki-Ju-Jitsu, escuela Yawara Ryu), y finalmente Hapkido.",
+      "En Taegu.",
+      "Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas.",
+      "Ji Han Jae y In Hyuk Suh."
+    ],
+    "corr": 0,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Primero Yu Kwon Sool, luego Hapki-Yu-Sul (Aiki-Ju-Jitsu, escuela Yawara Ryu), y finalmente Hapkido."
+  },
+  {
+    "q": "¿Qué es MORI POHODE?",
+    "opts": [
+      "Pegar con el codo lateral",
+      "Poco después de la muerte de Takeda, en Taegu, provincia de Kyung Buk.",
+      "Hola",
+      "Casco"
+    ],
+    "corr": 3,
+    "sec": "Protecciones",
+    "corr_txt": "Casco"
+  },
+  {
+    "q": "¿Qué es USHIRO UKEMI?",
+    "opts": [
+      "Caída lateral",
+      "Caída hacia atrás",
+      "Caída con rollo hacia adelante",
+      "Caída hacia adelante"
+    ],
+    "corr": 1,
+    "sec": "Caídas",
+    "corr_txt": "Caída hacia atrás"
+  },
+  {
+    "q": "¿Por qué era informal la instrucción de artes marciales en Venezuela entre los años 60 y 80?",
+    "opts": [
+      "En 1984.",
+      "Porque las artes marciales en el país eran bastante cerradas.",
+      "El maestro Kang, fundador del Taekwondo en Venezuela (1973).",
+      "Con el maestro Carlos Flores Medina."
+    ],
+    "corr": 1,
+    "sec": "Master Mendizábal",
+    "corr_txt": "Porque las artes marciales en el país eran bastante cerradas."
+  },
+  {
+    "q": "¿Qué significa KIONNE?",
+    "opts": [
+      "Movimientos con números",
+      "Monitor",
+      "Corea",
+      "Movimientos sin números"
+    ],
+    "corr": 3,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Movimientos sin números"
+  },
+  {
+    "q": "¿Qué es MONTONG MAKI?",
+    "opts": [
+      "Defensa lateral",
+      "Defensa con el canto de la mano",
+      "Defensa con el canto de la mano retorcida",
+      "Defensa al medio con el antebrazo"
+    ],
+    "corr": 3,
+    "sec": "Defensas",
+    "corr_txt": "Defensa al medio con el antebrazo"
+  },
+  {
+    "q": "¿Qué pasó con Morimoto?",
+    "opts": [
+      "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.",
+      "Choi no le gustó y debido a su protesta constante, Morimoto lo abandonó en el pueblo de Moji en Japón.",
+      "Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos.",
+      "Kintaro Wadanabi."
+    ],
+    "corr": 1,
+    "sec": "Entrevista a Choi Yong Sul",
+    "corr_txt": "Choi no le gustó y debido a su protesta constante, Morimoto lo abandonó en el pueblo de Moji en Japón."
+  },
+  {
+    "q": "¿Qué es BAKKAT PALMOK MAKKI?",
+    "opts": [
+      "Defensa con el borde externo de la muñeca",
+      "Defensa media o al medio",
+      "Defensa al centro con la zona externa del antebrazo",
+      "Defensa con el borde interno de la muñeca"
+    ],
+    "corr": 0,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa con el borde externo de la muñeca"
+  },
+  {
+    "q": "¿Qué significa KIOPA?",
+    "opts": [
+      "Retorcerse",
+      "Rompimiento",
+      "Una mano ayuda a la otra",
+      "Adelante, avanzar"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Rompimiento"
+  },
+  {
+    "q": "¿Quién fue el primer alumno importante de Choi en Corea?",
+    "opts": [
+      "Takeda Sokaku (Sogaku) lo adoptó y le dio el nombre japonés de Asao Yoshida.",
+      "Fue el principal miembro fundador de la 'Korean Hapkido Association' y el más fiel a las enseñanzas de su maestro.",
+      "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo.",
+      "En Taegu."
+    ],
+    "corr": 2,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Suh Bok Sup (Shu Bok Sup), quien lo contrató para entrenarlo. Practicaba Judo."
+  },
+  {
+    "q": "¿Qué significa SA BOM NIM?",
+    "opts": [
+      "Saludo al maestro",
+      "Maestro",
+      "Corea",
+      "Cinturón"
+    ],
+    "corr": 1,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Maestro"
+  },
+  {
+    "q": "¿Qué significa DO BOK?",
+    "opts": [
+      "Traje de taekwondo",
+      "No / Sí",
+      "Adiós",
+      "Movimientos sin números"
+    ],
+    "corr": 0,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Traje de taekwondo"
+  },
+  {
+    "q": "¿Cómo se dice 1 en coreano (ordinal)?",
+    "opts": [
+      "JANA (Primero)",
+      "YODUL (Octavo)",
+      "SET (Tercero)",
+      "NET (Cuarto)"
+    ],
+    "corr": 0,
+    "sec": "Números Coreanos",
+    "corr_txt": "JANA (Primero)"
+  },
+  {
+    "q": "¿Cómo se dice 7 en coreano?",
+    "opts": [
+      "ILGOP (Séptimo)",
+      "SET (Tercero)",
+      "YOSOP (Sexto)",
+      "AJOP (Noveno)"
+    ],
+    "corr": 0,
+    "sec": "Números Coreanos",
+    "corr_txt": "ILGOP (Séptimo)"
+  },
+  {
+    "q": "¿Qué es AN MIRO CHAGUI?",
+    "opts": [
+      "Empujar con el pie",
+      "Patada enganchando con pierna recta",
+      "Patada circular",
+      "Patada hacia atrás"
+    ],
+    "corr": 0,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Empujar con el pie"
+  },
+  {
+    "q": "¿De qué academias surgió la AVH?",
+    "opts": [
+      "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.",
+      "En 1993.",
+      "Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez.",
+      "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país."
+    ],
+    "corr": 2,
+    "sec": "Asociación Venezolana",
+    "corr_txt": "Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez."
+  },
+  {
+    "q": "¿Qué hizo In Hyuk Suh?",
+    "opts": [
+      "En la Montaña de Su, en el área de Hokkaido.",
+      "Porque las artes japonesas no eran apreciadas en Corea. Yoo Sool significa 'tanto duro como blando'.",
+      "Se separó para reorganizar el Ku Sul Won, un arte parecido al Hapkido con más énfasis en armas y Hyong (formas).",
+      "En 1954, por sugerencia de Seo Bok Seob."
+    ],
+    "corr": 2,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Se separó para reorganizar el Ku Sul Won, un arte parecido al Hapkido con más énfasis en armas y Hyong (formas)."
+  },
+  {
+    "q": "¿Qué significa CHECHO / OPO?",
+    "opts": [
+      "Pinchar",
+      "Llegar más lejos",
+      "Patada",
+      "Mano hacia arriba / Mano hacia abajo"
+    ],
+    "corr": 3,
+    "sec": "Acciones",
+    "corr_txt": "Mano hacia arriba / Mano hacia abajo"
+  },
+  {
+    "q": "¿Cómo se dice 3 en coreano?",
+    "opts": [
+      "YODUL (Octavo)",
+      "DASOT (Quinto)",
+      "SET (Tercero)",
+      "DUL (Segundo)"
+    ],
+    "corr": 2,
+    "sec": "Números Coreanos",
+    "corr_txt": "SET (Tercero)"
+  },
+  {
+    "q": "¿Qué es MONTONG MAKKI?",
+    "opts": [
+      "Defensa al centro con la zona externa del antebrazo",
+      "Defensa media o al medio",
+      "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado",
+      "Golpe o Ataque"
+    ],
+    "corr": 1,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa media o al medio"
+  },
+  {
+    "q": "¿Qué es AP CHAGUI?",
+    "opts": [
+      "Patada al frente",
+      "Patada descendente",
+      "Patada enganchando",
+      "Círculo de pierna interior"
+    ],
+    "corr": 0,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada al frente"
+  },
+  {
+    "q": "¿Qué significa DUIRO DORA?",
+    "opts": [
+      "Giro",
+      "Media vuelta",
+      "Defensa",
+      "Ataque"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Media vuelta"
+  },
+  {
+    "q": "¿Qué es AN PALMOK MONTONG MAKKI?",
+    "opts": [
+      "Defensa al centro con la zona externa del antebrazo",
+      "Defensa con el borde interno de la muñeca",
+      "Defensa abajo",
+      "Defensa al centro con la zona interna del antebrazo"
+    ],
+    "corr": 3,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa al centro con la zona interna del antebrazo"
+  },
+  {
+    "q": "¿Quiénes formaron la línea de instructores avanzados de la AVH?",
+    "opts": [
+      "Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez.",
+      "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas.",
+      "En 1990, después de que un grupo de instructores se organizaran y formaran jurídicamente la primera asociación de Hapkido en el país.",
+      "Master José Luis Mendizábal, Master Eulalio Vielma, Master Wilfredo Guette, Master Marco Tulio Vargas, Master Eliverio Vargas, Sabonim Fanny Rodríguez."
+    ],
+    "corr": 3,
+    "sec": "Asociación Venezolana",
+    "corr_txt": "Master José Luis Mendizábal, Master Eulalio Vielma, Master Wilfredo Guette, Master Marco Tulio Vargas, Master Eliverio Vargas, Sabonim Fanny Rodríguez."
+  },
+  {
+    "q": "¿Qué significa CHOKIO?",
+    "opts": [
+      "Monitor",
+      "Cinturón",
+      "Gracias",
+      "No / Sí"
+    ],
+    "corr": 0,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Monitor"
+  },
+  {
+    "q": "¿Quién era el monje que cuidó a Choi en el templo?",
+    "opts": [
+      "Kintaro Wadanabi.",
+      "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.",
+      "Sintió gran simpatía por él y al evaluar su situación decidió adoptarlo.",
+      "Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos."
+    ],
+    "corr": 0,
+    "sec": "Entrevista a Choi Yong Sul",
+    "corr_txt": "Kintaro Wadanabi."
+  },
+  {
+    "q": "¿Qué significa YOSOK DONG YA?",
+    "opts": [
+      "Combinación",
+      "Mano hacia arriba / Mano hacia abajo",
+      "Pegar",
+      "Media vuelta"
+    ],
+    "corr": 0,
+    "sec": "Acciones",
+    "corr_txt": "Combinación"
+  },
+  {
+    "q": "¿Qué significa SONKUT?",
+    "opts": [
+      "Pegar",
+      "Puño",
+      "Punta de los dedos",
+      "Cuello"
+    ],
+    "corr": 2,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Punta de los dedos"
+  },
+  {
+    "q": "¿Qué es BAKKAT PALMOK MONTONG MAKKI?",
+    "opts": [
+      "Defensa media o al medio",
+      "Defensa con el borde externo de la muñeca",
+      "Defensa hacia arriba",
+      "Defensa al centro con la zona externa del antebrazo"
+    ],
+    "corr": 3,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa al centro con la zona externa del antebrazo"
+  },
+  {
+    "q": "¿Cuántas personas había en el equipo de exhibición de Hawaii?",
+    "opts": [
+      "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.",
+      "En Kyoto.",
+      "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados.",
+      "Quedó huérfano y fue llevado a Japón."
+    ],
+    "corr": 0,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros."
+  },
+  {
+    "q": "¿Qué significa YOA?",
+    "opts": [
+      "Hacia adentro",
+      "Atrás",
+      "Izquierda",
+      "Derecha"
+    ],
+    "corr": 2,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Izquierda"
+  },
+  {
+    "q": "¿Qué significa U?",
+    "opts": [
+      "Al lado",
+      "Atrás",
+      "Giro del cuerpo",
+      "Derecha"
+    ],
+    "corr": 3,
+    "sec": "Clasificación por Posición",
+    "corr_txt": "Derecha"
+  },
+  {
+    "q": "¿Cuántas de esas técnicas dominó Choi Yong Sul personalmente?",
+    "opts": [
+      "Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas.",
+      "En la Montaña de Su, en el área de Hokkaido.",
+      "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros.",
+      "El 20 de julio de 1904 en la provincia de Chung Buk (Chong Buk), Corea del Sur."
+    ],
+    "corr": 0,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Todas. Takeda le informó antes de morir que era el único estudiante que había adiestrado en todos sus secretos y técnicas."
+  },
+  {
+    "q": "¿Qué es BATANG SON TOK JIRUGUI?",
+    "opts": [
+      "Golpe con la palma de la mano",
+      "Pegar con el canto de la mano al cuello",
+      "Golpe con el arco interior de la mano",
+      "Golpe arriba"
+    ],
+    "corr": 0,
+    "sec": "Ataques",
+    "corr_txt": "Golpe con la palma de la mano"
+  },
+  {
+    "q": "¿Qué ocurrió en 1995 con la AVH?",
+    "opts": [
+      "Master José Luis Mendizábal, Master Eulalio Vielma, Master Wilfredo Guette, Master Marco Tulio Vargas, Master Eliverio Vargas, Sabonim Fanny Rodríguez.",
+      "En 1993.",
+      "Koryo, Club Vargas, Club Parque del Este, Club Mejoramiento Profesional, Club Eliverio Vargas, Club Siso Martínez.",
+      "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas."
+    ],
+    "corr": 3,
+    "sec": "Asociación Venezolana",
+    "corr_txt": "El Master Myung Kwan Sik (alumno directo de Choi Yong Sul) los registró y les dio carta abierta para prácticas oficiales, acreditando a los Master José Luis Mendizábal y Master Eliverio Vargas."
+  },
+  {
+    "q": "¿Qué significa MAKKI?",
+    "opts": [
+      "Defensa",
+      "Defensa abajo",
+      "Defensa al centro con la zona interna del antebrazo",
+      "Golpe o Ataque"
+    ],
+    "corr": 0,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa"
+  },
+  {
+    "q": "¿Qué significa JIRUGUI?",
+    "opts": [
+      "Puño",
+      "Golpear",
+      "Canto interior de la mano (dorso)",
+      "Mano hacia abajo"
+    ],
+    "corr": 1,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Golpear"
+  },
+  {
+    "q": "¿Qué es OLGUL JIRUGUI?",
+    "opts": [
+      "Pegar con el codo lateral",
+      "Golpe arriba",
+      "Golpe lateral",
+      "Pegar con el canto exterior de la mano"
+    ],
+    "corr": 1,
+    "sec": "Ataques",
+    "corr_txt": "Golpe arriba"
+  },
+  {
+    "q": "¿Dónde fue a parar Choi después de ser abandonado?",
+    "opts": [
+      "Choi no le gustó y debido a su protesta constante, Morimoto lo abandonó en el pueblo de Moji en Japón.",
+      "Kintaro Wadanabi.",
+      "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista.",
+      "Un señor japonés llamado Morimoto, hombre de negocios y dueño de una tienda de dulces, que no tenía hijos."
+    ],
+    "corr": 2,
+    "sec": "Entrevista a Choi Yong Sul",
+    "corr_txt": "Viajó a Osaka, fue recogido por la policía, y como no tenía familia en Japón, lo pusieron al cuidado de monjes en un templo budista."
+  },
+  {
+    "q": "¿Qué significa JIRUGUI?",
+    "opts": [
+      "Media vuelta",
+      "Golpear",
+      "Llegar más lejos",
+      "Retorcerse"
+    ],
+    "corr": 1,
+    "sec": "Acciones",
+    "corr_txt": "Golpear"
+  },
+  {
+    "q": "¿Qué significa KORYO?",
+    "opts": [
+      "Bandera",
+      "Movimientos sin números",
+      "Movimientos con números",
+      "Corea"
+    ],
+    "corr": 3,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Corea"
+  },
+  {
+    "q": "¿Qué significa CHONG SUNG / HONG SUNG?",
+    "opts": [
+      "Vencedor Azul / Vencedor Rojo",
+      "Continuar",
+      "Punto válido",
+      "Tiempo"
+    ],
+    "corr": 0,
+    "sec": "Combate",
+    "corr_txt": "Vencedor Azul / Vencedor Rojo"
+  },
+  {
+    "q": "¿Qué es YOP CHAGUI?",
+    "opts": [
+      "Círculo de pierna exterior",
+      "Patada lateral",
+      "Patada semicircular baja exterior",
+      "Círculo de pierna interior"
+    ],
+    "corr": 1,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Patada lateral"
+  },
+  {
+    "q": "¿Qué significa GECHO?",
+    "opts": [
+      "Manos se cruzan al salir",
+      "Ataque",
+      "Pinchar",
+      "Llegar más lejos"
+    ],
+    "corr": 0,
+    "sec": "Acciones",
+    "corr_txt": "Manos se cruzan al salir"
+  },
+  {
+    "q": "¿Qué significa CHUMOK?",
+    "opts": [
+      "Punta de los dedos",
+      "Puño",
+      "Golpear",
+      "Cuello"
+    ],
+    "corr": 1,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Puño"
+  },
+  {
+    "q": "¿Cómo se llamaba originalmente?",
+    "opts": [
+      "Movimientos con números",
+      "'Mundial Hapkido Federation'.",
+      "Defensa media o al medio",
+      "Tiempo"
+    ],
+    "corr": 1,
+    "sec": "Federación Internacional",
+    "corr_txt": "'Mundial Hapkido Federation'."
+  },
+  {
+    "q": "¿A qué edad fue llevado Choi a Japón y a qué edad fue adoptado por Takeda?",
+    "opts": [
+      "En 1954, por sugerencia de Seo Bok Seob.",
+      "1953.",
+      "Casi 28 años.",
+      "Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años."
+  },
+  {
+    "q": "¿Cómo murió Takeda Sokaku?",
+    "opts": [
+      "Fue llevado a Japón a los 8 años y adoptado por Takeda a los casi 11 años.",
+      "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados.",
+      "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan.",
+      "Quedó huérfano y fue llevado a Japón."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Se negó a comer. Se sentía avergonzado por la derrota de Japón en la guerra y sentía que había perdido respeto ante sus antepasados."
+  },
+  {
+    "q": "¿Qué significa KYONGO?",
+    "opts": [
+      "Amonestación",
+      "Continuar",
+      "Gracias (en combate)",
+      "Tiempo médico (1 minuto)"
+    ],
+    "corr": 2,
+    "sec": "Combate",
+    "corr_txt": "Gracias (en combate)"
+  },
+  {
+    "q": "¿Qué significa CHUA U LLANG U?",
+    "opts": [
+      "Girar 90° (frente a frente)",
+      "Pegar",
+      "Pinchar",
+      "Media vuelta"
+    ],
+    "corr": 0,
+    "sec": "Acciones",
+    "corr_txt": "Girar 90° (frente a frente)"
+  },
+  {
+    "q": "¿Cuáles son los 3 principios básicos para aprender según la filosofía?",
+    "opts": [
+      "Todas las anteriores",
+      "Tomando técnicas basadas en bloqueos, golpes, patadas y lanzamientos, y a partir de ese punto debe aprender a coordinar sus recién encontradas habilidades dentro de un libre fluido de poder o energía.",
+      "El Ki, la esencia del poder. Se alcanza uniendo la mente y el cuerpo dentro de una unidad espiritual y física.",
+      "1) Así como la corriente del fluido penetra y rodea las obstrucciones, la fuerza del Hapkido entra y atraviesa a los oponentes. 2) Movimiento circular: Contratacando, oponiéndose y atacando. Por simple alteración del eje circular puede ser cambiado desde un frontal a un lateral. 3) No resistencia o armonía: Encontrar fuerzas con el mínimo esfuerzo o con la misma fuerza del oponente para no chocar con un adversario de poder."
+    ],
+    "corr": 3,
+    "sec": "Filosofía",
+    "corr_txt": "1) Así como la corriente del fluido penetra y rodea las obstrucciones, la fuerza del Hapkido entra y atraviesa a los oponentes. 2) Movimiento circular: Contratacando, oponiéndose y atacando. Por simple alteración del eje circular puede ser cambiado desde un frontal a un lateral. 3) No resistencia o armonía: Encontrar fuerzas con el mínimo esfuerzo o con la misma fuerza del oponente para no chocar con un adversario de poder."
+  },
+  {
+    "q": "¿Qué es KOCHONG SHU?",
+    "opts": [
+      "Luxación sobre el brazo flexionado, Luxación del brazo en cruz, Luxación con la rodilla, Luxación del brazo estirado con los brazos, Luxación con el estómago, Luxación con la axila, Luxación con la pierna, Luxación con la mano",
+      "Control laterocostal en bufanda, Variante del control laterocostal en bufanda, Control por el hombro, Control superior sobre cuatro puntos de apoyo, Control lateral sobre cuatro puntos de apoyo, Control sobre cuatro puntos de apoyo a horcajadas",
+      "Inmovilizaciones en el suelo",
+      "Luxaciones"
+    ],
+    "corr": 2,
+    "sec": "Inmovilizaciones",
+    "corr_txt": "Inmovilizaciones en el suelo"
+  },
+  {
+    "q": "¿En qué año y por sugerencia de quién se cambió el nombre a Yoo Sool?",
+    "opts": [
+      "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas.",
+      "Ji Han Jae y In Hyuk Suh.",
+      "En Kyoto.",
+      "En 1954, por sugerencia de Seo Bok Seob."
+    ],
+    "corr": 3,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "En 1954, por sugerencia de Seo Bok Seob."
+  },
+  {
+    "q": "¿Qué ocurrió en 1973?",
+    "opts": [
+      "En Taegu.",
+      "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan.",
+      "El emblema del águila atrapando la flecha, que representa la habilidad de los agarres para neutralizar las agresiones enemigas.",
+      "La 'Korea Kido Association', donde Choi Yong Sul era el presidente."
+    ],
+    "corr": 1,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Choi se reunió con los líderes de las dos asociaciones más fuertes de Corea para estandarizar la enseñanza y los métodos de exámenes hasta 5to Dan."
+  },
+  {
+    "q": "¿Qué significa KYESOK?",
+    "opts": [
+      "Continuar",
+      "Preparados",
+      "Comenzar",
+      "Protector bucal"
+    ],
+    "corr": 0,
+    "sec": "Combate",
+    "corr_txt": "Continuar"
+  },
+  {
+    "q": "¿Cómo nació el Hapkido según la historia?",
+    "opts": [
+      "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.",
+      "El creador Choi Yong Sul se topó con Seo Bok-Seob (hijo de un señor que lo vio defenderse). Seo practicaba Judo. Entre los dos decidieron darle creación al Hapkido combinando los estilos: Daito-Ryu Aiki Jutsu (aprendido por Choi en Japón), Judo y el Taek-Kyon. Nació en el año 1959.",
+      "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea.",
+      "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones."
+    ],
+    "corr": 1,
+    "sec": "Historia del Hapkido",
+    "corr_txt": "El creador Choi Yong Sul se topó con Seo Bok-Seob (hijo de un señor que lo vio defenderse). Seo practicaba Judo. Entre los dos decidieron darle creación al Hapkido combinando los estilos: Daito-Ryu Aiki Jutsu (aprendido por Choi en Japón), Judo y el Taek-Kyon. Nació en el año 1959."
+  },
+  {
+    "q": "¿Qué significa OPUM?",
+    "opts": [
+      "Mano hacia abajo",
+      "Puño",
+      "Cuello",
+      "Punta de los dedos"
+    ],
+    "corr": 0,
+    "sec": "Partes del Cuerpo",
+    "corr_txt": "Mano hacia abajo"
+  },
+  {
+    "q": "¿Cómo afectó la Segunda Guerra Mundial a la vida de Choi?",
+    "opts": [
+      "Trabajó con Takeda capturando desertores militares en las montañas. Takeda intervino para que Choi no fuera reclutado, porque si moriría se perdería el Daito Ryu Aiki-Jutsu completamente.",
+      "En 1959.",
+      "Quedó huérfano y fue llevado a Japón.",
+      "Cinco: Takeda Sokaku, Choi (Asao Yoshida), Jintaro, Abida y dos otros."
+    ],
+    "corr": 0,
+    "sec": "Historia de Choi Yong Sul",
+    "corr_txt": "Trabajó con Takeda capturando desertores militares en las montañas. Takeda intervino para que Choi no fuera reclutado, porque si moriría se perdería el Daito Ryu Aiki-Jutsu completamente."
+  },
+  {
+    "q": "¿Qué ocurrió durante la dinastía Yi con las artes marciales?",
+    "opts": [
+      "El Taek-Kyon, desarrollado por los hijos de las personas desterradas convertidos en monjes. Era un arte de derribar con las patadas.",
+      "Las personas estaban unificadas por la soberanía de la Reina Chin-Heung, pero los años siguientes el país estaba destrozado por guerras e insurrecciones.",
+      "El Hwarando. Cada Rey reunió un grupo élite de jóvenes guerreros especializados y disciplinados en el arte de matar con las manos desnudas. Siguió así por 200 años.",
+      "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea."
+    ],
+    "corr": 3,
+    "sec": "Historia del Hapkido",
+    "corr_txt": "Los Reyes iniciaron las artes culturales. Mientras el arte florecía, la violencia decrecía y lentamente el arte del combatiente fue reemplazado. Los que siguieron con los viejos principios fueron desterrados a un monasterio en las montañas de Corea."
+  },
+  {
+    "q": "¿Qué significa CHAGUI?",
+    "opts": [
+      "Giro",
+      "Pegar",
+      "Patada",
+      "Media vuelta"
+    ],
+    "corr": 2,
+    "sec": "Acciones",
+    "corr_txt": "Patada"
+  },
+  {
+    "q": "¿Qué es DUNG CHUMOK BAKAT CHIGUI?",
+    "opts": [
+      "Golpe con la mano hacia abajo (punta de dedos)",
+      "Pegar con la parte superior de los nudillos hacia fuera",
+      "Pegar con el codo lateral",
+      "Pegar con el codo circular"
+    ],
+    "corr": 1,
+    "sec": "Ataques",
+    "corr_txt": "Pegar con la parte superior de los nudillos hacia fuera"
+  },
+  {
+    "q": "¿Qué es YAN SONNAL MONTONG MAKKI?",
+    "opts": [
+      "Defensa al centro con la zona externa del antebrazo",
+      "Defensa con el borde interno de la muñeca",
+      "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado",
+      "Defensa hacia arriba"
+    ],
+    "corr": 2,
+    "sec": "Formas de Defensa",
+    "corr_txt": "Defensa de adentro hacia fuera con el canto de la mano y mano cerrada al costado"
+  },
+  {
+    "q": "¿Qué es YOKO UKEMI?",
+    "opts": [
+      "Caída hacia atrás",
+      "Caída lateral",
+      "Caída con rollo hacia adelante",
+      "Caída hacia adelante"
+    ],
+    "corr": 1,
+    "sec": "Caídas",
+    "corr_txt": "Caída lateral"
+  },
+  {
+    "q": "¿Qué es BAKAT DARI FURIGUI?",
+    "opts": [
+      "Patada semicircular baja exterior",
+      "Patada circular",
+      "Círculo de pierna exterior",
+      "Patada lateral"
+    ],
+    "corr": 2,
+    "sec": "Técnicas de Pierna",
+    "corr_txt": "Círculo de pierna exterior"
+  },
+  {
+    "q": "¿Qué significa KUKIWON?",
+    "opts": [
+      "Corea",
+      "Decano de Maestros",
+      "Cinturón",
+      "Cuartel general"
+    ],
+    "corr": 3,
+    "sec": "Vocabulario Coreano",
+    "corr_txt": "Cuartel general"
+  },
+  {
+    "q": "¿Cuáles son las fechas de Eulalio Vielma?",
+    "opts": [
+      "24 de agosto de 1960",
+      "N: 12 de diciembre de 1937 | M: 14 de mayo de 2014",
+      "N: 4 de noviembre de 1859 | M: 25 de abril de 1943",
+      "N: 20 de julio de 1904 | M: 15 de junio de 1986"
+    ],
+    "corr": 1,
+    "sec": "Maestros y Fechas",
+    "corr_txt": "N: 12 de diciembre de 1937 | M: 14 de mayo de 2014"
+  }
 ];
 
         // Build sections map
@@ -821,7 +3527,6 @@
             "Ying Yang": "☯️",
             "Federación Internacional": "🌍",
             "Proyecciones": "🔄",
-            "Dobom": "👐",
             "Historia de Choi Yong Sul": "🏯"
         };
 
